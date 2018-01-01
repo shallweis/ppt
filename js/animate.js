@@ -825,6 +825,97 @@ export const config =  [
             name: 'a5',
             cls: 'animated fadeInUp delay6'
         }
+    ],
+    [
+        {
+            name: 'txt28-1',
+            cls: 'animated fadeInLeft delay'
+        },
+        {
+            name: 'txt28-2',
+            cls: 'animated fadeInLeft delay4'
+        },
+        {
+            name: 'txt28-3',
+            cls: 'animated fadeInLeft delay5'
+        },
+        {
+            name: 'txt28-4',
+            cls: 'animated fadeInLeft delay2'
+        },
+        {
+            name: 'txt28-5',
+            cls: 'animated fadeInLeft delay3'
+        },
+    ],
+    [
+        {
+            name: 'txt29-1',
+            cls: 'animated fadeInLeft delay'
+        },
+        {
+            name: 'txt29-2',
+            cls: 'animated fadeInLeft delay2'
+        },
+        {
+            name: 'txt29-3',
+            cls: 'animated fadeInLeft delay3'
+        },
+        {
+            name: 'txt29-4',
+            cls: 'animated fadeInLeft delay4'
+        },
+        {
+            name: 'txt29-5',
+            cls: 'animated fadeInLeft delay5'
+        },
+        {
+            name: 'txt29-6',
+            cls: 'animated fadeInLeft delay6'
+        },
+        {
+            name: 'txt29-7',
+            cls: 'animated fadeInLeft delay7'
+        },
+    ],[
+        //29
+        {
+            name: 'btn-5',
+            cls: 'animated fadeIn delay1'
+        }
+        ,{
+            name: 'btn-6',
+            cls: 'animated fadeIn delay2'
+        },{
+            name: 'btn-7',
+            cls: 'animated fadeIn delay3'
+        },
+        {
+            name: 'btn-1',
+            cls: 'animated fadeInLeft delay4'
+        },{
+            name: 'btn-2',
+            cls: 'animated fadeInLeft delay5'
+        },{
+            name: 'btn-3',
+            cls: 'animated fadeInLeft delay6'
+        },{
+            name: 'btn-4',
+            cls: 'animated fadeInLeft delay7'
+        }
+    ],[
+        //30
+        { 
+            name: 'page-title',
+            cls: 'animated fadeInLeft'
+        },{
+            name: 'content',
+            cls: 'animated fadeInLeft delay2' 
+        }
+
     ]
+
 ] 
+
+
 

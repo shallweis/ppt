@@ -187,3 +187,17 @@ $(".flips2").click(function(e){
 	$(".mack_img1").hide()
 	return false
 })
+
+const $hover = $('.hover')
+
+$hover.on('mouseover', function() {
+	let $img = $(this).find('img')
+	let hover = $img.data('hover')
+	$img.attr('src', hover + '.png') 
+})
+
+$hover.on('mouseleave', function() {
+	let $img = $(this).find('img')
+	let hover = $img.data('hover')
+	$img.attr('src', hover + '-1.png') 
+})

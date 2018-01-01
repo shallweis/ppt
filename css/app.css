@@ -1161,5 +1161,195 @@
 }
 
 /*-----------------------------------------------------*/
+#slide-28 .txt28-1{
+    position: absolute;
+    left: -300px;
+    top: 114px;
+}
+#slide-28 .txt28-2{
+    position: absolute;
+    left: 550px;
+    top: 190px;
+}
+#slide-28 .txt28-3{
+    position: absolute;
+    left: 550px;
+    top: 385px;
+}
+#slide-28 .txt28-4{
+    position: absolute;
+    left: 550px;
+    top: -200px;
+}
+#slide-28 .txt28-5{
+    position: absolute;
+    left: 550px;
+    top: -113px;
+}
+#slide-29 .txt29-1{
+    position: absolute;
+    left: -300px;
+    top: 200px;
+}
+#slide-29 .txt29-2{
+    position: absolute;
+    left: 550px;
+    top: -100px;
+}
+#slide-29 .txt29-3{
+    position: absolute;
+    left: 577px;
+    top: 0px;
+}
+#slide-29 .txt29-4{
+    position: absolute;
+    left: 577px;
+    top: 211px;
+}
+#slide-29 .txt29-5{
+    position: absolute;
+    top: 200px;
+    left: 870px;
+}
+#slide-29 .txt29-6{
+    position: absolute;
+    top: 462px;
+    left: 570px;
+}
+#slide-29 .txt29-7{
+    position: absolute;
+    top: 462px;
+    left: 814px;
+}/*-------------32-------------------*/
+
+.hide {
+    display: none;
+}
+
+#slide-30 .left {
+    position: absolute;
+    left: -400px;
+    top: 40px;
+    width: 400px;
+}
+
+#slide-30 .left a {
+   display: inline-block;
+   height: 120px;
+}
+
+#slide-30 .btn-1 {
+   position: absolute;
+   top: 20px;
+   left: 0;
+ }
+
+ #slide-30 .btn-2 {
+    position: absolute;
+   top: 160px;
+   left: 0;
+ }
+
+ #slide-30 .btn-3 {
+    position: absolute;
+   top: 300px;
+   left: 0;
+ }
+
+ #slide-30 .btn-4 {
+    position: absolute;
+    top: 440px;
+    left: 0;
+ }
+#slide-30 .btn-5 {
+    position: absolute;
+    left: 1200px;
+    top: -100px;
+    zoom: 0.7
+ }
+
+#slide-30 .btn-6 {
+    position: absolute;
+    left: 1400px;
+    top: 220px;
+    zoom: 0.7
+
+ }
+
+ #slide-30 .btn-7 {
+    position: absolute;
+    left: 1150px;
+    top: 500px;
+    zoom: 0.7
+
+ }
+
+#slide-31 .bg {
+    position: absolute;
+    left: -150px;
+}
+
+
+#slide-31 .f1 {
+    position: absolute;
+    left: 100px;
+    top:0
+}
+
+#slide-31 .f2 {
+    position: absolute;
+    left: 60px;
+    top:0;
+    text-align: left;
+    width: 100%
+}
+
+#slide-31 .f2 img{
+    overflow: hidden;
+    margin:0;
+    padding: 0;
+    font-size: 0 !important;
+    /* width: 100% */
+}
+
+#slide-31 .a1{
+    position: absolute;
+    left: 40px;
+    top: 280px
+}
+#slide-31 .a2{
+    position: absolute;
+    left: 200px;
+    top: 245px
+}
+#slide-31 .a3{
+    position: absolute;
+    left: 385px;
+    top: 200px
+}
+
+#slide-31 .a4{
+    position: absolute;
+    left: 560px;
+    top: 150px
+}
+#slide-31 .a5{
+    position: absolute;
+    left: 740px;
+    top: 115px
+}
+
+#slide-31 .a6{
+    position: absolute;
+    left: 908px;
+    top: 95px
+}
+
+
+
+
+
+
+
 
 
