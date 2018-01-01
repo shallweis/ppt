@@ -162,3 +162,28 @@ $zoom.on('mouseover', function() {
 $zoom.on('mouseleave', function() {
 	$(this).removeClass('zoomOut')
 })
+
+const $mask = $(".mask")
+
+$(".flips").click(function(e){
+	$(".mask").show().addClass('animated fadeIn')
+	return false
+})
+
+$mask.on('click', function(e){
+	$(".mask").hide().removeClass('animated fadeIn');
+	return false
+})
+
+
+	
+$(".flips1").click(function(e){
+	$(".mack_img1").show().addClass('z-index');
+	$(".mack_img2").hide()
+	return false
+})
+$(".flips2").click(function(e){
+	$(".mack_img2").show().addClass('z-index')
+	$(".mack_img1").hide()
+	return false
+})

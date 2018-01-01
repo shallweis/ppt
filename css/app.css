@@ -655,11 +655,74 @@
 }
 #slide-12 .txt12-1{
     position: absolute;
-    top: -187px;
+    top: -311px;
     right: -327px;
 }
+#slide-12 .txt12-2{
+    position: absolute;
+    top: 374px;
+    right: -379px;
+}
+#slide-12 .txt12-3{
+    position: absolute;
+    left: -617px;
+    top: 267px;
+}
+#slide-13 .txt13-2{
+    position: absolute;
+    left: -200px;
+    top: 7px;
+    height:480px;
+}
 
+#slide-13 .txt13-3{
+    position: absolute;
+    top: 510px;
+    left: -152px;
+}
+#slide-13 .txt13-4{
+    position: absolute;
+    top: 545px;
+    left: 49px;
+}
+#slide-13 .txt13-5{
+    position: absolute;
+    top: 545px;
+    left: 84px;
+}
+#slide-13 .txt13-6{
+    position: absolute;
+    top: 545px;
+    left: 636px;
+}
+#slide-13 .txt13-7{
+    position: absolute;
+    top: 650px;
+    left: 353px;
+}
+#slide-13 .txt13-box{position: absolute;}
+.flips{display: block;}
+.panel{display: none;position: absolute;z-index: 9999;}
 
+.mask {
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.7);
+    z-index: 999;
+    display: none;
+}
+.mask img{
+    display: block;
+    position: absolute;
+    left:50%;
+    top: 50%;
+    margin-left: -604px;
+    margin-top: -261px; 
+}
+.z-index{z-index: 99;}
 /**---------------------15-----------------------*/
 
 #slide-15 .text {
@@ -819,6 +882,284 @@
  #slide-19 .pics {
      margin: 20px 0
  } 
+/**-----------------20---------------------------*/
 
+
+#slide-20 .left {
+    position: absolute;
+    left: -200px;
+    top: 0px;
+ }
+
+ #slide-20 .right {
+    position: absolute;
+    left: 550px;
+    top: 20px;
+ }
+
+ #slide-20 .title2 {
+     text-align: left
+ }
+
+ #slide-20 .item {
+   display: inline-block;
+   width: 800px;
+   height: 270px;
+   overflow: hidden;
+   text-align: left;
+ }
+
+ #slide-20 .item .desc{
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 40px;
+    margin-left: 30px;
+  }
+
+#slide-20 .pics{
+   text-align: left
+}
+
+#slide-20 .list{
+    text-align: left;
+    margin-top: 40px;
+ }
+
+
+ #slide-21 .right  {
+    position: absolute;
+    top: -180px;
+    right: -400px;
+    z-index: 10;
+}
+
+#slide-21 .left  {
+   position: absolute;
+   top: 100px;
+   left: -200px;
+}
+
+#slide-21 .text {
+    margin-top: 60px;
+}
+
+#slide-21 .left a {
+   display: block;
+   margin-bottom: 30px
+}
+
+#slide-22 .left {
+    position: absolute;
+    top: 150px;
+    left: -200px;
+}
+
+#slide-22 .text {
+    position: absolute;
+    top: 100px;
+    left: 300px;
+}
+
+#slide-22 .product {
+    position: absolute;
+    top: 100px;
+    left: 750px;
+}
+
+#slide-23 .main {
+    position: absolute;
+    top: 200px;
+    width: 295px;
+    left: 50%;
+    transform: translate(-50%)
+}
+
+#slide-23 .img1 {
+    position: absolute;
+    left: -200px;
+    top: 100px;
+    z-index: 2;
+}
+#slide-23 .img2 {
+    position: absolute;
+    left: -200px;
+    top: 330px;
+    z-index: 2;
+}
+#slide-23 .img3 {
+    position: absolute;
+    left: -200px;
+    top: 540px;
+    z-index: 2;
+}
+#slide-23 .img4 {
+    position: absolute;
+    left: 550px;
+    top: 80px;
+    z-index: 2;
+}
+#slide-23 .img5 {
+    position: absolute;
+    left: 260px;
+    top: 50px;
+    z-index: 2;
+}
+#slide-23 .img6 {
+    position: absolute;
+    left: 700px;
+    top: 500px;
+    z-index: 2;
+}
+
+#slide-23 .title2 {
+    text-align: left;
+    position: absolute;
+    left: -200px;
+}
+
+#slide-24 .left {
+    position: absolute;
+    left: -200px;
+    top: 100px;
+}
+
+#slide-24 .top {
+    position: absolute;
+    top: 50px;
+    left: 200px;
+}
+
+
+#slide-24 .center {
+    position: absolute;
+    top: 200px;
+    left: 200px;
+}
+
+#slide-24 .right {
+    position: absolute;
+    top: 150px;
+    left: 850px;
+}
+
+#slide-24 .a6 {
+    position: absolute;
+    top: 220px;
+    left: 0px;
+}
+
+#slide-25 .right  {
+    position: absolute;
+    top: -180px;
+    right: -400px;
+    z-index: 10;
+}
+
+#slide-25 .left  {
+   position: absolute;
+   top: 100px;
+   left: -200px;
+}
+
+#slide-25 .text {
+    margin-top: 60px;
+}
+
+#slide-25 .left a {
+   display: block;
+   margin-bottom: 30px
+}
+
+#slide-26 .top {
+    position: absolute;
+    left: -200px
+}
+
+#slide-26 .left {
+    position: absolute;
+    left: -200px;
+    top: 150px;
+}
+
+/* #slide-26 .left {
+    position: absolute;
+    left: -200px;
+    top: 150px;
+} */
+
+#slide-26 .left .a3 {
+    position: absolute;
+    top :0px;
+    left:100px;
+}
+
+#slide-26 .left .a4 {
+    position: absolute;
+    top :400px;
+    left: -100px;
+}
+
+#slide-26 .right .a6 {
+    position: absolute;
+    top :450px;
+    left: 800px;
+}
+
+#slide-26 .bottom .a5 {
+    position: absolute;
+    top : 720px;
+    left: 250px;
+}
+#slide-26 .right .a7 {
+    position: absolute;
+    top :150px;
+    left: 750px;
+}
+
+#slide-26 .center {
+    position: absolute;
+    top: 150px;
+    left: 150px;
+}
+
+#slide-27 .left {
+    position: absolute;
+    top: 120px;
+    left: -200px;
+}
+
+#slide-27 .left img{
+   display: block;
+   margin-bottom: 10px
+}
+
+#slide-27 .right img{
+    display: block;
+    margin-bottom: 10px
+ }
+
+#slide-27 .right {
+    position: absolute;
+    top: 120px;
+    left: 540px;
+}
+
+#slide-27 .top {
+    position: absolute;
+    left: -200px;
+}
+#slide-27 .bottom {
+    position: absolute;
+    top:820px;
+}
+
+#slide-27 .center {
+    position: absolute;
+    top: 280px;
+    left: 320px;
+    z-index: 10
+}
+
+/*-----------------------------------------------------*/
 
 
