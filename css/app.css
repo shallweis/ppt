@@ -95,6 +95,24 @@
 .delay10 {
     animation-delay: 5.5s
 }
+.delay11 {
+    animation-delay: 6s
+}
+.delay12 {
+    animation-delay: 5.5s
+}
+.delay13 {
+    animation-delay: 7s
+}
+.delay14 {
+    animation-delay: 7.5s
+}
+.delay15 {
+    animation-delay: 8s
+}
+.delay16 {
+    animation-delay: 8.5s
+}
 .zoomOut {
     transform: scale(1.05);
     transition: transform .2s;
@@ -435,6 +453,8 @@
     margin-bottom: 30px
 }
 
+/*------------------------------------------------------------------------------*/
+
 
 
 /*----------------------------------------------------------------------*/
@@ -564,8 +584,241 @@
     top: 36px;
 }
 #slide-11 .txt11-2{
-    top: 267px;
+    top: 252px;
 }
 #slide-11 .txt11-3{
-    top: 500px;
+    top: 469px;
 }
+#slide-11 .txt11-4{
+    position: absolute;
+    top: 36px;
+    left: -350px;
+}
+#slide-11 .txt11-5{
+    position: absolute;
+    left: 1239px;
+    top: 124px;
+}
+.page-title .txt-11 {
+    position: absolute;
+    left: 100px;
+    top: 30px;
+}
+#slide-11 .txt11_abs{
+    position: absolute;top:650px;
+}
+#slide-11 .txt11-6{
+    left: -195px;
+}
+#slide-11 .txt11-7{
+    left: 290px;
+}
+#slide-11 .txt11-8{
+    left: 843px;
+    width: 478px;
+    height: 49px;
+}
+#slide-11 .txt11-9{
+    position: absolute;
+    top: 715px;
+    left: -487px;
+}
+#slide-11 .txt11-10{
+    position: absolute;
+    top:750px;left: -300px;
+}
+#slide-11 .txt11-11{
+    position: absolute;
+    top: 721px;
+    left: -60px;
+}
+#slide-11 .txt11-12{
+    position: absolute;
+    top: 760px;
+    left: 280px;
+}
+
+#slide-11 .txt11-13{
+    position: absolute;
+    top: 760px;
+    left: 656px;
+}
+#slide-11 .txt11-14{
+    position: absolute;
+    top: 724px;
+    left: 1070px;
+}
+#slide-11 .txt11-15{
+    position: absolute;
+    top: 782px;
+    left: -80px;
+}
+#slide-12 .txt12-1{
+    position: absolute;
+    top: -187px;
+    right: -327px;
+}
+
+
+/**---------------------15-----------------------*/
+
+#slide-15 .text {
+    width: 1800px;
+    position: absolute;
+    left: 50%;
+    margin-left: -900px;
+}
+
+#slide-15 .product {
+    width: 1800px;
+    position: absolute;
+    left: 50%;
+    margin-left: -900px;
+    top: 300px;
+}
+
+#slide-15 .product > div{ 
+    display: inline-block;
+    text-align: center
+}
+
+#slide-15 .title{
+    left: 100px;
+}
+
+#slide-16 .text {
+    width: 1700px;
+    position: absolute;
+    left: 50%;
+    top: 60px;
+    margin-left: -850px;
+    text-align: left;
+}
+
+#slide-16 .product {
+    width: 1800px;
+    position: absolute;
+    left: 50%;
+    margin-left: -900px;
+    top: 240px;
+}
+
+#slide-16 .product > div{ 
+    display: inline-block;
+    text-align: center
+}
+
+#slide-16 .title{
+    left: 100px;
+}
+
+#slide-17 .text{
+   text-align: left;
+   position: absolute;
+   left: -150px;
+   top: 40px;
+}
+
+#slide-17 .product{
+    position: absolute;
+    width: 1400px;
+    left: -200px;
+    top: 300px;
+    display: -webkit-box
+ }
+
+ #slide-17 .product > div {
+   flex: 1;
+ }
+
+ #slide-17 .product .left {
+    margin-right: 40px
+}
+
+#slide-17 .pro {
+    position: absolute;
+    width: 1400px;
+    left: -200px;
+    top: 140px;
+    text-align: left !important;
+}
+
+#slide-17 .a2 {
+    position: relative;
+    left: -5px;
+}
+
+#slide-17 .a3 {
+    position: relative;
+    left: -12px;
+}
+
+#slide-17 .title{
+    left: 100px;
+}
+
+#slide-18 .right  {
+    position: absolute;
+    top: -180px;
+    right: -400px;
+    z-index: 10;
+}
+
+#slide-18 .left  {
+   position: absolute;
+   top: 100px;
+   left: -200px;
+}
+
+#slide-18 .text {
+    margin-top: 60px;
+}
+
+#slide-18 .left a {
+   display: block;
+   margin-bottom: 30px
+}
+
+#slide-19 .left {
+    position: absolute;
+    left: -200px;
+    top: 0px;
+ }
+
+ #slide-19 .right {
+    position: absolute;
+    left: 550px;
+    top: 20px;
+ }
+
+ #slide-19 .title2 {
+     text-align: left
+ }
+
+ #slide-19 .desc {
+   display: inline-block;
+   width: 400px;
+   height: 270px;
+   margin-top: 30px;
+   overflow: hidden;
+ }
+
+ #slide-19 .desc img{
+    margin-top: 10px;
+  }
+
+ #slide-19 .product {
+     /* width: 60px; */
+     text-align: left;
+ }
+ #slide-19 .product .item > img {
+    display: inline-block;
+    vertical-align: bottom;
+  }
+
+ #slide-19 .pics {
+     margin: 20px 0
+ } 
+
+
+
