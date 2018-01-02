@@ -158,7 +158,7 @@ const scacle = width / 1920
 $('body').css({
 	zoom: scacle
 })
-
+console.log(scacle)
 const $zoom = $('.zoom')
 
 $zoom.on('mouseover', function() {
