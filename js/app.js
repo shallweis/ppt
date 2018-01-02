@@ -122,7 +122,7 @@ Reveal.initialize({
     // // minScale: 1,
 	// width: 1080,
 	// height: 800,
-	// minScale: 1,
+	minScale: 0.6,
 	maxScale: 1
 
 });
@@ -153,11 +153,7 @@ function toggleAnimation(el, add = true) {
     } 
 }
 
-const width = $(window).width()
-const scacle = width / 1920
-$('body').css({
-	zoom: scacle
-})
+
 
 const $zoom = $('.zoom')
 
@@ -205,3 +201,25 @@ $hover.on('mouseleave', function() {
 	let hover = $img.data('hover')
 	$img.attr('src', hover + '-1.png') 
 })
+
+$('.full').on('click', function(){
+	if (screenfull.isFullscreen) {
+		screenfull.exit()
+	} else {
+		screenfull.request()
+	}
+})
+
+
+function resize() {
+	const width = $(window).width()
+	const scacle = width / 1920
+	$('body').css({
+		zoom: scacle > 1 ? 1 : scacle
+	})
+}
+$(window).on('resize', function(){
+	resize()
+})
+
+resize()
