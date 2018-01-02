@@ -1530,9 +1530,13 @@
 #slide-36 .txt2{
     position: absolute;
     left: 334px;
-    top: 104px;
+    top: 36px;
 }
-
+#slide-37 .txt1{
+    position: absolute;
+    left: -400px;
+    top: 46px;
+}
 
 
 

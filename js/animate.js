@@ -1021,9 +1021,9 @@
         },
         {
             name: 'txt6',
-            cls: 'animated fadeInLeft delay6'
+            cls: 'animated fadeInRight delay6'
         }
-    ],[
+    ],[//35
         {
             name: 'page-title',
             cls: 'animated fadeInLeft'
@@ -1072,7 +1072,7 @@
             name: 'txt11',
             cls: 'animated fadeInRight delay11'
         }
-    ],[
+    ],[//36
         {
             name: 'page-title',
             cls: 'animated fadeInLeft'
@@ -1085,6 +1085,15 @@
             name: 'txt2',
             cls: 'animated fadeInRight delay2'
         }
+    ],[//37
+        {
+            name: 'page-title',
+            cls: 'animated fadeInLeft'
+        }, 
+        {
+            name: 'txt1',
+            cls: 'animated fadeInLeft delay1'
+        },
     ]
 
 ] 
