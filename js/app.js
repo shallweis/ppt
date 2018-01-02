@@ -153,8 +153,6 @@ function toggleAnimation(el, add = true) {
     } 
 }
 
-
-
 const $zoom = $('.zoom')
 
 $zoom.on('mouseover', function() {
