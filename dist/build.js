@@ -199,7 +199,7 @@ _reveal2.default.initialize({
 	// // minScale: 1,
 	// width: 1080,
 	// height: 800,
-	// minScale: 1,
+	minScale: 0.6,
 	maxScale: 1
 
 });
@@ -252,12 +252,6 @@ function toggleAnimation(el) {
 	}
 }
 
-var width = $(window).width();
-var scacle = width / 1920;
-$('body').css({
-	zoom: scacle
-});
-console.log(scacle);
 var $zoom = $('.zoom');
 
 $zoom.on('mouseover', function () {
@@ -304,6 +298,27 @@ $hover.on('mouseleave', function () {
 	var hover = $img.data('hover');
 	$img.attr('src', hover + '-1.png');
 });
+
+$('.full').on('click', function () {
+	if (screenfull.isFullscreen) {
+		screenfull.exit();
+	} else {
+		screenfull.request();
+	}
+});
+
+function resize() {
+	var width = $(window).width();
+	var scacle = width / 1920;
+	$('body').css({
+		zoom: scacle > 1 ? 1 : scacle
+	});
+}
+$(window).on('resize', function () {
+	resize();
+});
+
+resize();
 
 /***/ }),
 /* 1 */
@@ -6333,8 +6348,9 @@ var config = exports.config = [[{ //1
     cls: 'animated fadeInUp delay5'
 }, {
     name: 'txt6',
-    cls: 'animated fadeInLeft delay6'
-}], [{
+    cls: 'animated fadeInRight delay6'
+}], [//35
+{
     name: 'page-title',
     cls: 'animated fadeInLeft'
 }, {
@@ -6370,7 +6386,8 @@ var config = exports.config = [[{ //1
 }, {
     name: 'txt11',
     cls: 'animated fadeInRight delay11'
-}], [{
+}], [//36
+{
     name: 'page-title',
     cls: 'animated fadeInLeft'
 }, {
@@ -6379,6 +6396,13 @@ var config = exports.config = [[{ //1
 }, {
     name: 'txt2',
     cls: 'animated fadeInRight delay2'
+}], [//37
+{
+    name: 'page-title',
+    cls: 'animated fadeInLeft'
+}, {
+    name: 'txt1',
+    cls: 'animated fadeInLeft delay1'
 }]];
 
 /***/ })
