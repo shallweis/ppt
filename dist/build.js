@@ -252,6 +252,12 @@ function toggleAnimation(el) {
 	}
 }
 
+var width = $(window).width();
+var scacle = width / 1920;
+$('body').css({
+	zoom: scacle
+});
+
 var $zoom = $('.zoom');
 
 $zoom.on('mouseover', function () {
@@ -5563,19 +5569,19 @@ var config = exports.config = [[{ //1
     cls: 'animated infinite pulse'
 }], [{ //2
     name: 'f1',
-    cls: 'animated fadeIn delay2'
+    cls: 'animated fadeInUp delay2'
 }, {
     name: 'f2',
-    cls: 'animated fadeIn delay1'
+    cls: 'animated fadeInUp delay1'
 }, {
     name: 'zfb1',
-    cls: 'animated fadeIn delay3'
-}, {
-    name: 'zfb2',
     cls: 'animated fadeIn delay4'
 }, {
-    name: 'zfb3',
+    name: 'zfb2',
     cls: 'animated fadeIn delay5'
+}, {
+    name: 'zfb3',
+    cls: 'animated fadeIn delay6'
 }, {
     name: 'b1',
     cls: 'animated infinite pulse'
@@ -6241,6 +6247,138 @@ var config = exports.config = [[{ //1
 }, {
     name: 'content',
     cls: 'animated fadeInLeft delay2'
+}], [//32
+{
+    name: 'page-title',
+    cls: 'animated fadeInLeft'
+}, {
+    name: 'title',
+    cls: 'animated fadeInLeft delay1'
+}, {
+    name: 'tu1',
+    cls: 'animated fadeInLeft delay2'
+}, {
+    name: 'tu2',
+    cls: 'animated fadeInLeft delay3'
+}, {
+    name: 'tu3',
+    cls: 'animated fadeInLeft delay4'
+}, {
+    name: 'tu4',
+    cls: 'animated fadeInLeft delay5'
+}, {
+    name: 'tu5',
+    cls: 'animated fadeInLeft delay6'
+}, {
+    name: 'tu6',
+    cls: 'animated fadeInLeft delay8'
+}, {
+    name: 'tu7',
+    cls: 'animated fadeInLeft delay10'
+}, {
+    name: 'tu8',
+    cls: 'animated fadeInLeft delay7'
+}, {
+    name: 'tu9',
+    cls: 'animated fadeInLeft delay9'
+}, {
+    name: 'tu10',
+    cls: 'animated fadeInLeft delay11'
+}], [//33
+{
+    name: 'page-title',
+    cls: 'animated fadeInLeft'
+}, {
+    name: 'txt1',
+    cls: 'animated fadeInLeft delay1'
+}, {
+    name: 'txt2',
+    cls: 'animated fadeInLeft delay2'
+}, {
+    name: 'txt3',
+    cls: 'animated fadeInLeft delay3'
+}, {
+    name: 'txt4',
+    cls: 'animated fadeInLeft delay4'
+}, {
+    name: 'txt5',
+    cls: 'animated fadeInLeft delay5'
+}, {
+    name: 'txt6',
+    cls: 'animated fadeInLeft delay6'
+}, {
+    name: 'txt7',
+    cls: 'animated fadeInLeft delay7'
+}, {
+    name: 'txt8',
+    cls: 'animated fadeInLeft delay8'
+}], [//34
+{
+    name: 'page-title',
+    cls: 'animated fadeInLeft'
+}, {
+    name: 'txt5',
+    cls: 'animated fadeInLeft delay1'
+}, {
+    name: 'txt1',
+    cls: 'animated fadeInUp delay2'
+}, {
+    name: 'txt2',
+    cls: 'animated fadeInUp delay3'
+}, {
+    name: 'txt3',
+    cls: 'animated fadeInUp delay4'
+}, {
+    name: 'txt4',
+    cls: 'animated fadeInUp delay5'
+}, {
+    name: 'txt6',
+    cls: 'animated fadeInLeft delay6'
+}], [{
+    name: 'page-title',
+    cls: 'animated fadeInLeft'
+}, {
+    name: 'txt1',
+    cls: 'animated fadeInLeft delay1'
+}, {
+    name: 'txt2',
+    cls: 'animated fadeInLeft delay2'
+}, {
+    name: 'txt3',
+    cls: 'animated fadeInLeft delay3'
+}, {
+    name: 'txt4',
+    cls: 'animated fadeInLeft delay4'
+}, {
+    name: 'txt5',
+    cls: 'animated fadeInLeft delay5'
+}, {
+    name: 'txt6',
+    cls: 'animated fadeInLeft delay6'
+}, {
+    name: 'txt7',
+    cls: 'animated fadeInLeft delay7'
+}, {
+    name: 'txt8',
+    cls: 'animated fadeInLeft delay8'
+}, {
+    name: 'txt9',
+    cls: 'animated fadeInLeft delay9'
+}, {
+    name: 'txt10',
+    cls: 'animated fadeInLeft delay10'
+}, {
+    name: 'txt11',
+    cls: 'animated fadeInRight delay11'
+}], [{
+    name: 'page-title',
+    cls: 'animated fadeInLeft'
+}, {
+    name: 'txt1',
+    cls: 'animated fadeInLeft delay1'
+}, {
+    name: 'txt2',
+    cls: 'animated fadeInRight delay2'
 }]];
 
 /***/ })
