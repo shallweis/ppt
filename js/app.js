@@ -153,6 +153,12 @@ function toggleAnimation(el, add = true) {
     } 
 }
 
+const width = $(window).width()
+const scacle = width / 1920
+$('body').css({
+	zoom: scacle
+})
+
 const $zoom = $('.zoom')
 
 $zoom.on('mouseover', function() {
@@ -174,8 +180,6 @@ $mask.on('click', function(e){
 	$(".mask").hide().removeClass('animated fadeIn');
 	return false
 })
-
-
 	
 $(".flips1").click(function(e){
 	$(".mack_img1").show().addClass('z-index');
