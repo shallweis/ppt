@@ -913,9 +913,184 @@ export const config =  [
             cls: 'animated fadeInLeft delay2' 
         }
 
+    ],[//32
+        { 
+            name: 'page-title',
+            cls: 'animated fadeInLeft'
+        },
+        {
+            name: 'title',
+            cls: 'animated fadeInLeft delay1'
+        }, 
+        {
+            name: 'tu1',
+            cls: 'animated fadeInLeft delay2'
+        }, 
+        {
+            name: 'tu2',
+            cls: 'animated fadeInLeft delay3'
+        }, 
+        {
+            name: 'tu3',
+            cls: 'animated fadeInLeft delay4'
+        }, 
+        {
+            name: 'tu4',
+            cls: 'animated fadeInLeft delay5'
+        }, 
+        {
+            name: 'tu5',
+            cls: 'animated fadeInLeft delay6'
+        }, 
+        {
+            name: 'tu6',
+            cls: 'animated fadeInLeft delay8'
+        }, 
+        {
+            name: 'tu7',
+            cls: 'animated fadeInLeft delay10'
+        }, 
+        {
+            name: 'tu8',
+            cls: 'animated fadeInLeft delay7'
+        }, 
+        {
+            name: 'tu9',
+            cls: 'animated fadeInLeft delay9'
+        }, 
+        {
+            name: 'tu10',
+            cls: 'animated fadeInLeft delay11'
+        }, 
+    ],[//33
+        {
+            name: 'page-title',
+            cls: 'animated fadeInLeft'
+        }, 
+        {
+            name: 'txt1',
+            cls: 'animated fadeInLeft delay1'
+        }, 
+        {
+            name: 'txt2',
+            cls: 'animated fadeInLeft delay2'
+        }, 
+        {
+            name: 'txt3',
+            cls: 'animated fadeInLeft delay3'
+        }, 
+        {
+            name: 'txt4',
+            cls: 'animated fadeInLeft delay4'
+        }, 
+        {
+            name: 'txt5',
+            cls: 'animated fadeInLeft delay5'
+        }, 
+        {
+            name: 'txt6',
+            cls: 'animated fadeInLeft delay6'
+        }, 
+        {
+            name: 'txt7',
+            cls: 'animated fadeInLeft delay7'
+        }, 
+        {
+            name: 'txt8',
+            cls: 'animated fadeInLeft delay8'
+        }
+    ],[//34
+        {
+            name: 'page-title',
+            cls: 'animated fadeInLeft'
+        }, 
+        {
+            name: 'txt5',
+            cls: 'animated fadeInLeft delay1'
+        }, 
+        {
+            name: 'txt1',
+            cls: 'animated fadeInUp delay2'
+        }, 
+        {
+            name: 'txt2',
+            cls: 'animated fadeInUp delay3'
+        }, 
+        {
+            name: 'txt3',
+            cls: 'animated fadeInUp delay4'
+        }, 
+        {
+            name: 'txt4',
+            cls: 'animated fadeInUp delay5'
+        },
+        {
+            name: 'txt6',
+            cls: 'animated fadeInLeft delay6'
+        }
+    ],[
+        {
+            name: 'page-title',
+            cls: 'animated fadeInLeft'
+        }, 
+        {
+            name: 'txt1',
+            cls: 'animated fadeInLeft delay1'
+        }, 
+        {
+            name: 'txt2',
+            cls: 'animated fadeInLeft delay2'
+        }, 
+        {
+            name: 'txt3',
+            cls: 'animated fadeInLeft delay3'
+        }, 
+        {
+            name: 'txt4',
+            cls: 'animated fadeInLeft delay4'
+        }, 
+        {
+            name: 'txt5',
+            cls: 'animated fadeInLeft delay5'
+        }, 
+        {
+            name: 'txt6',
+            cls: 'animated fadeInLeft delay6'
+        }, 
+        {
+            name: 'txt7',
+            cls: 'animated fadeInLeft delay7'
+        }, 
+        {
+            name: 'txt8',
+            cls: 'animated fadeInLeft delay8'
+        }, 
+        {
+            name: 'txt9',
+            cls: 'animated fadeInLeft delay9'
+        }, 
+        {
+            name: 'txt10',
+            cls: 'animated fadeInLeft delay10'
+        },
+        {
+            name: 'txt11',
+            cls: 'animated fadeInRight delay11'
+        }
+    ],[
+        {
+            name: 'page-title',
+            cls: 'animated fadeInLeft'
+        }, 
+        {
+            name: 'txt1',
+            cls: 'animated fadeInLeft delay1'
+        }, 
+        {
+            name: 'txt2',
+            cls: 'animated fadeInRight delay2'
+        }
     ]
 
 ] 
-
-
 
