@@ -1,9 +1,4 @@
- 
-
-
-
-
-export const config =  [
+ export const config =  [
     [{//1
         name: 'title',
         cls: 'animated fadeInLeft'
@@ -13,23 +8,23 @@ export const config =  [
     }], 
     [{//2
         name: 'f1',
-        cls: 'animated fadeIn delay2'
+        cls: 'animated fadeInUp delay2'
     },
     {
         name: 'f2',
-        cls: 'animated fadeIn delay1'
+        cls: 'animated fadeInUp delay1'
     },
     {
         name: 'zfb1',
-        cls: 'animated fadeIn delay3'
-    },
-    {
-        name: 'zfb2',
         cls: 'animated fadeIn delay4'
     },
     {
-        name: 'zfb3',
+        name: 'zfb2',
         cls: 'animated fadeIn delay5'
+    },
+    {
+        name: 'zfb3',
+        cls: 'animated fadeIn delay6'
     }, {
         name: 'b1',
         cls: 'animated infinite pulse'
