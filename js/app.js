@@ -137,11 +137,12 @@ Reveal.addEventListener('slidechanged', function( event ) {
 	// event.previousSlide, event.currentSlide, event.indexh, event.indexv
 }); 
 
-
+console.log(config)
 function toggleAnimation(el, add = true) {
     const $el = $(el)
     const index = $el.data('index')
-    const styles = config[index - 1]
+	const styles = config[index - 1]
+	console.log(styles)
     if (styles) {
         for (let style of styles) {
             if (add) {

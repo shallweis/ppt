@@ -108,7 +108,7 @@
     animation-delay: 6s
 }
 .delay12 {
-    animation-delay: 5.5s
+    animation-delay: 6.5s
 }
 .delay13 {
     animation-delay: 7s
@@ -223,21 +223,28 @@
     bottom: -840px;
 }
 
-#slide-03 .btn {
+#slide-03 .left {
     position: absolute;
     left: -360px;
 }
 
+#slide-03 .left a{
+    display: block
+}
+
 #slide-03 .btn-1 {
+    position: absolute;
     top :100px
 }
 
 #slide-03 .btn-2 {
-    top :300px
+    position: absolute;
+    top :250px
 }
 
 #slide-03 .btn-3 {
-    top :500px
+    position: absolute;
+    top :400px
 }
 
 #slide-05 .title {
@@ -451,9 +458,22 @@
     left: -200px;
 }
 
-#slide-14 .left a {
-    display: block;
-    margin-bottom: 30px
+#slide-14 .left .btn-1{
+    position: absolute;
+    top: 40px;
+    left: -100px;
+}
+
+#slide-14 .left .btn-2{
+    position: absolute;
+    top: 180px;
+    left: -100px;
+}
+
+#slide-14 .left .btn-3{
+    position: absolute;
+    top: 320px;
+    left: -100px;
 }
 
 /*------------------------------------------------------------------------------*/
@@ -667,6 +687,12 @@
     top: 374px;
     right: -379px;
 }
+
+#slide-12 .btn-1 {
+    position: absolute;
+    left: -300px;
+    top:300px;
+}
 #slide-12 .txt12-3{
     position: absolute;
     left: -617px;
@@ -831,11 +857,17 @@
     z-index: 10;
 }
 
-#slide-18 .left  {
+#slide-18 .left .btn-1 {
    position: absolute;
    top: 100px;
    left: -200px;
 }
+
+#slide-18 .left .btn-2 {
+    position: absolute;
+    top: 240px;
+    left: -200px;
+ }
 
 #slide-18 .text {
     margin-top: 60px;
@@ -937,25 +969,48 @@
     z-index: 10;
 }
 
-#slide-21 .left  {
-   position: absolute;
-   top: 100px;
-   left: -200px;
-}
+
+ /* #slide-21 .left{
+    position: absolute;
+    left: -300px;
+ } */
+
+ #slide-21 .left a {
+     display: block
+ }
 
 #slide-21 .text {
     margin-top: 60px;
 }
 
-#slide-21 .left a {
-   display: block;
-   margin-bottom: 30px
+/* #slide-21 .left {
+   position: absolute;
+   left: -300px;
+   top: 0
+} */
+
+#slide-21 .btn-1 {
+    position: absolute;
+    top: 0;
+    left: -300px;
+}
+
+#slide-21 .btn-2 {
+    position: absolute;
+    top: 140px;
+    left: -300px;
+}
+
+#slide-21 .btn-3 {
+    position: absolute;
+    top: 280px;
+    left: -300px;
 }
 
 #slide-22 .left {
     position: absolute;
     top: 150px;
-    left: -200px;
+    left: -00px;
 }
 
 #slide-22 .text {
@@ -1059,11 +1114,17 @@
     z-index: 10;
 }
 
-#slide-25 .left  {
+#slide-25 .btn-1 {
    position: absolute;
    top: 100px;
    left: -200px;
 }
+
+#slide-25 .btn-2 {
+    position: absolute;
+    top: 240px;
+    left: -200px;
+ }
 
 #slide-25 .text {
     margin-top: 60px;
@@ -1128,8 +1189,8 @@
 
 #slide-27 .left {
     position: absolute;
-    top: 120px;
-    left: -200px;
+    top: 100px;
+    left: -250px;
 }
 
 #slide-27 .left img{
@@ -1144,17 +1205,18 @@
 
 #slide-27 .right {
     position: absolute;
-    top: 120px;
-    left: 540px;
+    top: 100px;
+    left: 490px;
 }
 
 #slide-27 .top {
     position: absolute;
-    left: -200px;
+    left: -250px;
+    top: 10px
 }
 #slide-27 .bottom {
     position: absolute;
-    top:820px;
+    top:800px;
 }
 
 #slide-27 .center {
@@ -1352,124 +1414,129 @@
 #slide-32  .tu1{
     position: absolute;
     left: -150px;
-    top: 52px;
+    top: 10px;
+    zoom: 0.9
 }
 #slide-32  .tu2{
     position: absolute;
     left: 350px;
-    top: 52px;
+    top: 10px;
+    zoom: 0.9
 }
-#slide-32  .tu3{
+#slide-32 .tu3{
     position: absolute;
     left: 821px;
-    top: 52px;
+    top: 10px;
+    zoom: 0.9
 }
-#slide-32  .tu4{
+#slide-32 .tu4{
     position: absolute;
     left: -200px;
-    top: 420px; 
+    top: 300px; 
+
 }
 #slide-32 .tu5{
     position: absolute;
     left: -115px;
-    top: 609px;
+    top: 430px;
 }
 #slide-32 .tu6{
     position: absolute;
     left: 385px;
-    top: 609px;
+    top: 430px;
 }
 #slide-32 .tu7{
     position: absolute;
     left: 862px;
-    top: 609px;
+    top: 430px;
 }
 
 #slide-32 .tu8{
     position: absolute;
     left: -115px;
-    top: 853px;
+    top: 613px;
 }
+
 #slide-32 .tu9{
     position: absolute;
     left: 385px;
-    top: 853px;
+    top: 623px;
 }
 #slide-32 .tu10{
     position: absolute;
     left: 862px;
-    top: 853px;
+    top: 623px;
 }
 #slide-33 .txt1{
     position: absolute;
     left: 0;
-    top: 443px;
+    top: 353px;
 }
 #slide-33 .txt2{
     position: absolute;
     left: -409px;
-    top: 344px;
+    top: 254px;
 }
 #slide-33 .txt3{
     position: absolute;
     left: -396px;
-    top: 100px;
+    top: 10px;
 }
 #slide-33 .txt4{
     position: absolute;
     left: 149px;
-    top: 100px;
+    top: 10px;
 }
 #slide-33 .txt5{
     position: absolute;
     left: 275px;
-    top: 367px;
+    top: 287px;
 }
 #slide-33 .txt6{
     position: absolute;
     left: -411px;
-    top: 670px;
+    top: 580px;
 }
 #slide-33 .txt7{
     position: absolute;
     left: 149px;
-    top: 670px;
+    top: 580px;
 }
 #slide-33 .txt8{
     position: absolute;
     left: 817px;
-    top: 100px;
+    top: 10px;
 }
 
 #slide-34 .txt1{
     position: absolute;
-    left: -240px;
-    top: 103px;
+    left: -300px;
+    top: 73px;
 }
 #slide-34 .txt2{
     position: absolute;
-    left: -240px;
-    top: 303px;
+    left: -300px;
+    top: 273px;
 }
 #slide-34 .txt3{
     position: absolute;
-    left: -240px;
-    top: 503px;
+    left: -300px;
+    top: 473px;
 }
 #slide-34 .txt4{
     position: absolute;
-    left: -240px;
-    top: 703px;
+    left: -300px;
+    top: 673px;
 }
 #slide-34 .txt5{
     position: absolute;
-    left: -187px;
-    top: 38px;
+    left: -247px;
+    top: 18px;
 }
 #slide-34 .txt6{
     position: absolute;
-    left: -85px;
-    top: 124px;
+    left: -145px;
+    top: 104px;
 }
 
 #slide-35 .txt1{
@@ -1530,14 +1597,208 @@
 
 #slide-36 .txt1{
     position: absolute;
-    left: -366px;
-    top: 204px;
+    left: -360px;
+    top: 120px;
 }
 #slide-36 .txt2{
     position: absolute;
-    left: 334px;
-    top: 104px;
+    left: 400px;
+    top: 50px;
+    zoom: 0.9
 }
+
+
+/*--------------41------------------------*/
+
+#slide-37 .a1 {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    /* width: 1800px; */
+}
+#slide-38 .left {
+    position: absolute;
+    left: -420px;
+}
+#slide-38 .left .btn-1{
+    position: absolute;
+    top: -50px;
+}
+#slide-38 .left .btn-2{
+    position: absolute;
+    top: 100px;
+}
+#slide-38 .left .btn-3{
+    position: absolute;
+    top: 250px;
+}
+#slide-38 .left .btn-4{
+    position: absolute;
+    top: 400px;
+}
+
+#slide-38 .btn-5{
+    position: absolute;
+    top: -100px;
+    left: 900px;
+}
+#slide-39 .content {
+    position: absolute;
+    left: -300px;
+    top: 50px
+}
+
+#slide-39 .content .right{
+    position: absolute;
+    left:900px;
+    top:100px;
+    text-align: left;
+}
+
+#slide-39 .content .right .img1 {
+    margin-bottom: 80px
+}
+
+#slide-40 .content {
+    position: absolute;
+    left: -300px;
+}
+
+#slide-40 .content div{
+    margin-bottom: 60px;
+}
+
+#slide-40 .f3 div{
+    width: 420px;
+    display: inline-block;
+    text-align: center;
+    vertical-align: top
+}
+
+#slide-41 .content {
+    position: absolute;
+    left: -300px;
+}
+
+#slide-42 .left {
+    position: absolute;
+    left: -250px;
+    top:70px;
+    z-index: 2
+}
+
+#slide-42 .content {
+    position: absolute;
+    left: -320px;
+    top: 70px
+}
+#slide-42 .content img{
+    margin-bottom: 20px
+}
+
+#slide-42 .a5 {
+    position: absolute;
+    left: 1200px;
+    top: 150px;
+    z-index: 2
+}
+
+#slide-42 .a6 {
+    position: absolute;
+    left: 1050px;
+    top:250px;
+    z-index: 2
+}
+
+#slide-42 .title2{
+    position: absolute;
+    left: -150px;
+}
+
+/* #slide-42 .page-title .title{
+    position: absolute;
+    left: 200px !important;
+} */
+
+#slide-43 .title2 {
+    position: absolute;
+    left: -250px;
+    top: 20px
+}
+
+#slide-43 .content {
+    position: absolute;
+    left: -250px;
+    top: 80px
+}
+#slide-43 .content img{
+   margin-bottom: 10px;
+   vertical-align: middle
+}
+
+#slide-43 .content .f6 .img2 {
+    margin-left: 80px
+}
+
+
+#slide-44 .left .btn-1 {
+    top :200px;
+    left: -250px;
+    position: absolute;
+}
+
+#slide-44 .left .btn-2 {
+    top :350px;
+    left: -250px;
+    position: absolute;
+}
+#slide-44 .title2 {
+    position: absolute;
+    left: 500px;
+    top: -150px
+}
+
+#slide-44 .btn-3{
+    position: absolute;
+    left: 920px;
+    top: 400px
+}
+
+#slide-45 .content{
+    position: absolute;
+    left: 50%;
+    top: 0px;
+    width: 1540px;
+    transform: translate(-50%)
+}
+#slide-45 .content img{ 
+    margin: 0 20px 20px 20px
+}
+
+#slide-46 .content{
+    position: absolute;
+    left: 50%;
+    top: 0px;
+    width: 1540px;
+    transform: translate(-50%)
+}
+#slide-46 F.content img{ 
+    margin: 0 20px 20px 20px
+}
+
+/* #slide-45 .f1 {
+    position: absolute;
+    top: 0;
+}
+#slide-45 .f2 {
+    position: absolute;
+    top: 300px;
+}
+#slide-45 .f3 {
+    position: absolute;
+    top: 600px;
+} */
+
 
 
 
