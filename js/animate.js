@@ -159,14 +159,14 @@
         name: 'zfb1',
         cls: 'animated   pulse infinite'
     },
-    {
+    /*{
         name: 'zfb2',
         cls: 'animated   pulse infinite'
     },
     {
         name: 'zfb3',
         cls: 'animated   pulse infinite'
-    },
+    },*/
     {
         name: 'zfb4',
         cls: 'animated   pulse infinite'

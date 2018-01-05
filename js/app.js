@@ -227,7 +227,7 @@ $(window).on('resize', function(){
 })
 
 resize()
-let i = 12;
+//let i = 12;
 /*window.addEventListener("hashchange", function(){
 	setTimout(function(){
 		i++;
