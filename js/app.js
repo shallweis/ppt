@@ -128,7 +128,8 @@ Reveal.initialize({
 });
 
 Reveal.addEventListener( 'ready', function( event ) { 
-    toggleAnimation(event.currentSlide)
+	toggleAnimation(event.currentSlide)
+
 });
 
 Reveal.addEventListener('slidechanged', function( event ) {
@@ -142,7 +143,7 @@ function toggleAnimation(el, add = true) {
     const $el = $(el)
     const index = $el.data('index')
 	const styles = config[index - 1]
-	console.log(styles)
+	//console.log(styles)
     if (styles) {
         for (let style of styles) {
             if (add) {
@@ -210,11 +211,15 @@ $('.full').on('click', function(){
 })
 
 
-function resize() {
+function resize(a = 0) {
 	const width = $(window).width()
-	const scacle = width / 1920
+	const height = $(window).height()
+	let scacleX = width / 1920
+	let scacleY = height / 1080
+	scacleX = scacleX > 1 ? 1 : scacleX + a
+	//scacleY = scacleY > 1 ? 1 : scacleY + a
 	$('body').css({
-		zoom: scacle > 1 ? 1 : scacle
+		zoom: scacleX
 	})
 }
 $(window).on('resize', function(){
@@ -222,3 +227,20 @@ $(window).on('resize', function(){
 })
 
 resize()
+let i = 12;
+/*window.addEventListener("hashchange", function(){
+	setTimout(function(){
+		i++;
+		$('body').css({
+			'font-size': i + 'px' 
+		})
+	}, 1000)
+},false)*/
+
+
+
+/*$('a').on('click', function(event){
+	event.preventDefault()
+	window.location = $(this).attr('href')
+})*/
+

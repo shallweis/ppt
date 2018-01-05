@@ -140,19 +140,19 @@
         cls: 'animated fadeInLeft delay3'
     }
     ],[{ //7
-        name: 'a-btn-1',
+        name: 'btn-1',
         cls: 'animated fadeInLeft delay'
     },
     {
-        name: 'a-btn-2',
+        name: 'btn-2',
         cls: 'animated fadeInLeft delay1'
     },
     {
-        name: 'a-btn-3',
+        name: 'btn-3',
         cls: 'animated fadeInLeft delay2'
     },
     {
-        name: 'a-btn-4',
+        name: 'btn-4',
         cls: 'animated fadeInLeft delay3'
     },
     {
@@ -383,7 +383,7 @@
             cls: 'animated fadeInLeft  delay3'
         },
         {
-            name: 'txt13-5',
+            name: 'txt13-7',
             cls: 'animated pulse infinite '
         },
         {
@@ -522,11 +522,11 @@
             cls: 'animated fadeInRight delay1'
         },
         {
-            name: 'a-btn-1',
+            name: 'btn-1',
             cls: 'animated fadeInLeft delay2'
         },
         {
-            name: 'a-btn-2',
+            name: 'btn-2',
             cls: 'animated fadeInLeft delay3'
         }
     ],
@@ -620,15 +620,15 @@
             cls: 'animated fadeInRight delay1'
         },
         {
-            name: 'a-btn-1',
+            name: 'btn-1',
             cls: 'animated fadeInLeft delay2'
         },
         {
-            name: 'a-btn-2',
+            name: 'btn-2',
             cls: 'animated fadeInLeft delay3'
         },
         {
-            name: 'a-btn-3',
+            name: 'btn-3',
             cls: 'animated fadeInLeft delay4'
         }
     ],[
@@ -743,11 +743,11 @@
             cls: 'animated fadeInRight delay1'
         },
         {
-            name: 'a-btn-1',
+            name: 'btn-1',
             cls: 'animated fadeInLeft delay2'
         },
         {
-            name: 'a-btn-2',
+            name: 'btn-2',
             cls: 'animated fadeInLeft delay3'
         },
         {

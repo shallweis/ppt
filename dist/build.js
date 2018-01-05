@@ -199,7 +199,7 @@ _reveal2.default.initialize({
 	// // minScale: 1,
 	// width: 1080,
 	// height: 800,
-	// minScale: 1,
+	minScale: 0.6,
 	maxScale: 1
 
 });
@@ -214,12 +214,14 @@ _reveal2.default.addEventListener('slidechanged', function (event) {
 	// event.previousSlide, event.currentSlide, event.indexh, event.indexv
 });
 
+console.log(_animate.config);
 function toggleAnimation(el) {
 	var add = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : true;
 
 	var $el = $(el);
 	var index = $el.data('index');
 	var styles = _animate.config[index - 1];
+	//console.log(styles)
 	if (styles) {
 		var _iteratorNormalCompletion = true;
 		var _didIteratorError = false;
@@ -252,12 +254,6 @@ function toggleAnimation(el) {
 	}
 }
 
-var width = $(window).width();
-var scacle = width / 1920;
-$('body').css({
-	zoom: scacle
-});
-console.log(scacle);
 var $zoom = $('.zoom');
 
 $zoom.on('mouseover', function () {
@@ -304,6 +300,47 @@ $hover.on('mouseleave', function () {
 	var hover = $img.data('hover');
 	$img.attr('src', hover + '-1.png');
 });
+
+$('.full').on('click', function () {
+	if (screenfull.isFullscreen) {
+		screenfull.exit();
+	} else {
+		screenfull.request();
+	}
+});
+
+function resize() {
+	var a = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 0;
+
+	var width = $(window).width();
+	var height = $(window).height();
+	var scacleX = width / 1920;
+	var scacleY = height / 1080;
+	scacleX = scacleX > 1 ? 1 : scacleX + a;
+	//scacleY = scacleY > 1 ? 1 : scacleY + a
+	$('body').css({
+		zoom: scacleX
+	});
+}
+$(window).on('resize', function () {
+	resize();
+});
+
+resize();
+var i = 12;
+/*window.addEventListener("hashchange", function(){
+	setTimout(function(){
+		i++;
+		$('body').css({
+			'font-size': i + 'px' 
+		})
+	}, 1000)
+},false)*/
+
+/*$('a').on('click', function(event){
+	event.preventDefault()
+	window.location = $(this).attr('href')
+})*/
 
 /***/ }),
 /* 1 */
@@ -5668,16 +5705,16 @@ var config = exports.config = [[{ //1
     name: 'bg4',
     cls: 'animated fadeInLeft delay3'
 }], [{ //7
-    name: 'a-btn-1',
+    name: 'btn-1',
     cls: 'animated fadeInLeft delay'
 }, {
-    name: 'a-btn-2',
+    name: 'btn-2',
     cls: 'animated fadeInLeft delay1'
 }, {
-    name: 'a-btn-3',
+    name: 'btn-3',
     cls: 'animated fadeInLeft delay2'
 }, {
-    name: 'a-btn-4',
+    name: 'btn-4',
     cls: 'animated fadeInLeft delay3'
 }, {
     name: 'zfb1',
@@ -5834,7 +5871,7 @@ var config = exports.config = [[{ //1
     name: 'txt12-2',
     cls: 'animated fadeInRight delay1'
 }, {
-    name: 'txt12-3',
+    name: 'btn-1',
     cls: 'animated fadeInLeft delay2'
 }], [
 //13
@@ -5851,7 +5888,7 @@ var config = exports.config = [[{ //1
     name: 'txt13-box',
     cls: 'animated fadeInLeft  delay3'
 }, {
-    name: 'txt13-5',
+    name: 'txt13-7',
     cls: 'animated pulse infinite '
 }, {
     name: 'txt13-6',
@@ -5958,10 +5995,10 @@ var config = exports.config = [[{ //1
     name: 'text',
     cls: 'animated fadeInRight delay1'
 }, {
-    name: 'a-btn-1',
+    name: 'btn-1',
     cls: 'animated fadeInLeft delay2'
 }, {
-    name: 'a-btn-2',
+    name: 'btn-2',
     cls: 'animated fadeInLeft delay3'
 }], [//19
 {
@@ -6031,13 +6068,13 @@ var config = exports.config = [[{ //1
     name: 'text',
     cls: 'animated fadeInRight delay1'
 }, {
-    name: 'a-btn-1',
+    name: 'btn-1',
     cls: 'animated fadeInLeft delay2'
 }, {
-    name: 'a-btn-2',
+    name: 'btn-2',
     cls: 'animated fadeInLeft delay3'
 }, {
-    name: 'a-btn-3',
+    name: 'btn-3',
     cls: 'animated fadeInLeft delay4'
 }], [
 //22
@@ -6123,10 +6160,10 @@ var config = exports.config = [[{ //1
     name: 'text',
     cls: 'animated fadeInRight delay1'
 }, {
-    name: 'a-btn-1',
+    name: 'btn-1',
     cls: 'animated fadeInLeft delay2'
 }, {
-    name: 'a-btn-2',
+    name: 'btn-2',
     cls: 'animated fadeInLeft delay3'
 }, {
     name: 'a-btn-3',
@@ -6334,7 +6371,8 @@ var config = exports.config = [[{ //1
 }, {
     name: 'txt6',
     cls: 'animated fadeInLeft delay6'
-}], [{
+}], [//35
+{
     name: 'page-title',
     cls: 'animated fadeInLeft'
 }, {
@@ -6370,7 +6408,8 @@ var config = exports.config = [[{ //1
 }, {
     name: 'txt11',
     cls: 'animated fadeInRight delay11'
-}], [{
+}], [//36
+{
     name: 'page-title',
     cls: 'animated fadeInLeft'
 }, {
@@ -6379,6 +6418,199 @@ var config = exports.config = [[{ //1
 }, {
     name: 'txt2',
     cls: 'animated fadeInRight delay2'
+}], [{
+    name: 'page-title',
+    cls: 'animated fadeInLeft'
+}, {
+    name: 'a1',
+    cls: 'animated fadeIn delay2'
+}], [{ name: 'btn-1',
+    cls: 'animated fadeInLeft delay1'
+}, {
+    name: 'btn-2',
+    cls: 'animated fadeInLeft delay2'
+}, {
+    name: 'btn-3',
+    cls: 'animated fadeInLeft delay3'
+}, {
+    name: 'btn-4',
+    cls: 'animated fadeInLeft delay4'
+}, {
+    name: 'btn-5',
+    cls: 'animated fadeIn delay1'
+}, {
+    name: 'btn-5-img',
+    cls: 'animated infinite pulse'
+}], [{ name: 'a1',
+    cls: 'animated fadeInDown delay1'
+}, {
+    name: 'a2',
+    cls: 'animated fadeInLeft delay2'
+}, {
+    name: 'a3',
+    cls: 'animated fadeInLeft delay3'
+}, {
+    name: 'a4',
+    cls: 'animated fadeInLeft delay4'
+}, {
+    name: 'right',
+    cls: 'animated fadeInRight delay5'
+}], [{ name: 'a1',
+    cls: 'animated fadeInLeft delay1'
+}, {
+    name: 'a2',
+    cls: 'animated fadeInLeft delay2'
+}, {
+    name: 'a3',
+    cls: 'animated fadeInLeft delay3'
+}, {
+    name: 'a4',
+    cls: 'animated fadeInLeft delay4'
+}, {
+    name: 'item1',
+    cls: 'animated fadeInLeft delay5'
+}, {
+    name: 'item2',
+    cls: 'animated fadeInLeft delay6'
+}, {
+    name: 'item3',
+    cls: 'animated fadeInLeft delay7'
+}], [
+//40
+{
+    name: 'page-title',
+    cls: 'animated fadeInLeft'
+}, {
+    name: 'f1',
+    cls: 'animated fadeInDown delay2'
+}, {
+    name: 'f2',
+    cls: 'animated fadeInDown delay3'
+}, {
+    name: 'f3',
+    cls: 'animated fadeInDown delay4'
+}], [
+//40
+{
+    name: 'page-title',
+    cls: 'animated fadeInLeft'
+}, {
+    name: 'a1',
+    cls: 'animated fadeInUp delay2'
+}, {
+    name: 'a2',
+    cls: 'animated fadeInUp delay3'
+}, {
+    name: 'a3',
+    cls: 'animated fadeInUp delay4'
+}, {
+    name: 'a4',
+    cls: 'animated fadeInLeft delay5'
+}, {
+    name: 'a5',
+    cls: 'animated fadeInRight delay6'
+}, {
+    name: 'a6',
+    cls: 'animated fadeInRight delay6'
+}, {
+    name: 'title2',
+    cls: 'animated fadeIn delay1'
+}], [{
+    name: 'page-title',
+    cls: 'animated fadeInLeft'
+}, {
+    name: 'title2',
+    cls: 'animated fadeIn delay1'
+}, {
+    name: 'content',
+    cls: 'animated fadeInLeft delay2'
+}], [{
+    name: 'title2',
+    cls: 'animated fadeInDown'
+}, {
+    name: 'btn-1',
+    cls: 'animated fadeInLeft delay1'
+}, {
+    name: 'btn-2',
+    cls: 'animated fadeInLeft delay2'
+}, {
+    name: 'btn-3',
+    cls: 'animated infinite pulse'
+}, {
+    name: 'btn-3-box',
+    cls: 'animated fadeIn delay3'
+}], [{
+    name: 'a1',
+    cls: 'animated fadeInLeft delay1'
+}, {
+    name: 'a2',
+    cls: 'animated fadeInLeft delay2'
+}, {
+    name: 'a3',
+    cls: 'animated fadeInLeft delay3'
+}, {
+    name: 'a4',
+    cls: 'animated fadeInLeft delay4'
+}, {
+    name: 'a5',
+    cls: 'animated fadeInLeft delay5'
+}, {
+    name: 'a6',
+    cls: 'animated fadeInLeft delay6'
+}, {
+    name: 'a7',
+    cls: 'animated fadeInLeft delay7'
+}, {
+    name: 'a8',
+    cls: 'animated fadeInLeft delay8'
+}, {
+    name: 'a9',
+    cls: 'animated fadeInLeft delay9'
+}, {
+    name: 'a10',
+    cls: 'animated fadeInLeft delay10'
+}, {
+    name: 'a11',
+    cls: 'animated fadeInLeft delay11'
+}, {
+    name: 'a12',
+    cls: 'animated fadeInLeft delay12'
+}], [{
+    name: 'a1',
+    cls: 'animated fadeInLeft delay1'
+}, {
+    name: 'a2',
+    cls: 'animated fadeInLeft delay2'
+}, {
+    name: 'a3',
+    cls: 'animated fadeInLeft delay3'
+}, {
+    name: 'a4',
+    cls: 'animated fadeInLeft delay4'
+}, {
+    name: 'a5',
+    cls: 'animated fadeInLeft delay5'
+}, {
+    name: 'a6',
+    cls: 'animated fadeInLeft delay6'
+}, {
+    name: 'a7',
+    cls: 'animated fadeInLeft delay7'
+}, {
+    name: 'a8',
+    cls: 'animated fadeInLeft delay8'
+}, {
+    name: 'a9',
+    cls: 'animated fadeInLeft delay9'
+}, {
+    name: 'a10',
+    cls: 'animated fadeInLeft delay10'
+}, {
+    name: 'a11',
+    cls: 'animated fadeInLeft delay11'
+}, {
+    name: 'a12',
+    cls: 'animated fadeInLeft delay12'
 }]];
 
 /***/ })
