@@ -129,19 +129,21 @@ Reveal.initialize({
 
 Reveal.addEventListener( 'ready', function( event ) { 
 	toggleAnimation(event.currentSlide)
-
 });
 
 Reveal.addEventListener('slidechanged', function( event ) {
+	//back.removeClass('animated fadeIn delay2')
+	$('.back-btn').remove()
     toggleAnimation(event.currentSlide)
     toggleAnimation(event.previousSlide, false)
 	// event.previousSlide, event.currentSlide, event.indexh, event.indexv
 }); 
 
-console.log(config)
+let prev = null
 function toggleAnimation(el, add = true) {
     const $el = $(el)
     const index = $el.data('index')
+	prev = $el.attr('id')
 	const styles = config[index - 1]
 	//console.log(styles)
     if (styles) {
@@ -152,7 +154,10 @@ function toggleAnimation(el, add = true) {
                 $el.find('.' + style.name).removeClass(style.cls)     
             } 
         }
-    } 
+    }
+	if (index - 1) {
+		$('body').append('<a class="back-btn animated fadeIn delay2" href="javascript:;"><img src="images/back.png" alt="返回"></a>')
+	}
 }
 
 const $zoom = $('.zoom')
@@ -227,6 +232,12 @@ $(window).on('resize', function(){
 })
 
 resize()
+
+$(document.body).on('click', '.back-btn', function(){
+	if (prev) {
+		window.location = '#/' + prev
+	}
+})
 //let i = 12;
 /*window.addEventListener("hashchange", function(){
 	setTimout(function(){
