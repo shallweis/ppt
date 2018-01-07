@@ -209,17 +209,20 @@ _reveal2.default.addEventListener('ready', function (event) {
 });
 
 _reveal2.default.addEventListener('slidechanged', function (event) {
+	//back.removeClass('animated fadeIn delay2')
+	$('.back-btn').remove();
 	toggleAnimation(event.currentSlide);
 	toggleAnimation(event.previousSlide, false);
 	// event.previousSlide, event.currentSlide, event.indexh, event.indexv
 });
 
-console.log(_animate.config);
+var prev = null;
 function toggleAnimation(el) {
 	var add = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : true;
 
 	var $el = $(el);
 	var index = $el.data('index');
+	prev = $el.attr('id');
 	var styles = _animate.config[index - 1];
 	//console.log(styles)
 	if (styles) {
@@ -251,6 +254,9 @@ function toggleAnimation(el) {
 				}
 			}
 		}
+	}
+	if (index - 1) {
+		$('body').append('<a class="back-btn animated fadeIn delay2" href="javascript:;"><img src="images/back.png" alt="返回"></a>');
 	}
 }
 
@@ -327,7 +333,13 @@ $(window).on('resize', function () {
 });
 
 resize();
-var i = 12;
+
+$(document.body).on('click', '.back-btn', function () {
+	if (prev) {
+		window.location = '#/' + prev;
+	}
+});
+//let i = 12;
 /*window.addEventListener("hashchange", function(){
 	setTimout(function(){
 		i++;
@@ -5719,13 +5731,16 @@ var config = exports.config = [[{ //1
 }, {
     name: 'zfb1',
     cls: 'animated   pulse infinite'
-}, {
+},
+/*{
     name: 'zfb2',
     cls: 'animated   pulse infinite'
-}, {
+},
+{
     name: 'zfb3',
     cls: 'animated   pulse infinite'
-}, {
+},*/
+{
     name: 'zfb4',
     cls: 'animated   pulse infinite'
 }, {
