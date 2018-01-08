@@ -220,6 +220,7 @@ _reveal2.default.addEventListener('slidechanged', function (event) {
 });
 
 var prev = null;
+var $body = $(document.body);
 function toggleAnimation(el) {
 	var add = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : true;
 
@@ -227,7 +228,7 @@ function toggleAnimation(el) {
 	var index = $el.data('index');
 	prev = $el.attr('id');
 	var styles = _animate.config[index - 1];
-	showLayer(index);
+
 	//console.log(styles)
 	if (styles) {
 		var _iteratorNormalCompletion = true;
@@ -260,8 +261,10 @@ function toggleAnimation(el) {
 		}
 	}
 	if (index - 1) {
-		$('body').append('<a class="back-btn animated fadeIn delay2" href="javascript:;"><img src="images/back.png" alt="返回"></a>');
+		$('.back-btn').remove();
+		$body.append('<a class="back-btn animated fadeIn delay2" href="javascript:;"><img src="images/back.png" alt="返回"></a>');
 	}
+	showLayer(index);
 }
 
 var $zoom = $('.zoom');
@@ -380,7 +383,7 @@ var layer = {
 	}, {
 		'show': false,
 		'target': '#slide-02 .btn-1',
-		'layer': '<img src="images/02/layer.png" class="layer-2 animated fadeIn delay6 layer">',
+		'layer': '<img src="images/02/layer.png" class="animated fadeIn delay6 layer">',
 		'mask': '',
 		'top': 38,
 		'left': 24,
@@ -443,7 +446,6 @@ var layer = {
 		'mask': ''
 	}]
 };
-var $body = $(document.body);
 
 var w = $(window).width();
 var h = $(window).height();
@@ -455,7 +457,7 @@ function showLayer(index) {
 	var _iteratorError2 = undefined;
 
 	try {
-		var _loop = function _loop() {
+		for (var _iterator2 = layer[index][Symbol.iterator](), _step2; !(_iteratorNormalCompletion2 = (_step2 = _iterator2.next()).done); _iteratorNormalCompletion2 = true) {
 			var item = _step2.value;
 
 			if (!item.show) {
@@ -474,22 +476,18 @@ function showLayer(index) {
 					}
 					$(item.target).before($layer);
 				}
-				if (item.top) {
-					setTimeout(function () {
-						var postion = $(item.target).offset();
-						//let scacleY = height / 1080
-						scacleX = scacleX > 1 ? 1 : scacleX;
-						$layer.offset({
-							top: postion.top - item.top * scacleX,
-							left: postion.left + item.left * scacleX
-						});
-					}, 1000);
-				}
+				// if (item.top) {
+				// 	setTimeout(function(){
+				// 		const postion = $(item.target).offset()
+				// 		//let scacleY = height / 1080
+				// 		scacleX = scacleX > 1 ? 1 : scacleX
+				// 		$layer.offset({
+				// 			top: postion.top - item.top * scacleX,
+				// 			left: postion.left + item.left * scacleX
+				// 		})
+				// 	}, 1000)
+				// }	
 			}
-		};
-
-		for (var _iterator2 = layer[index][Symbol.iterator](), _step2; !(_iteratorNormalCompletion2 = (_step2 = _iterator2.next()).done); _iteratorNormalCompletion2 = true) {
-			_loop();
 		}
 	} catch (err) {
 		_didIteratorError2 = true;

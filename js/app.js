@@ -144,12 +144,13 @@ Reveal.addEventListener('slidechanged', function( event ) {
 }); 
 
 let prev = null
+const $body = $(document.body)
 function toggleAnimation(el, add = true) {
     const $el = $(el)
     const index = $el.data('index')
 	prev = $el.attr('id')
 	const styles = config[index - 1]
-	showLayer(index)
+	
 	//console.log(styles)
     if (styles) {
         for (let style of styles) {
@@ -160,9 +161,11 @@ function toggleAnimation(el, add = true) {
             } 
         }
     }
-	if (index - 1) {
-		$('body').append('<a class="back-btn animated fadeIn delay2" href="javascript:;"><img src="images/back.png" alt="返回"></a>')
+	if (index - 1 ) {
+		$('.back-btn').remove()
+		$body.append('<a class="back-btn animated fadeIn delay2" href="javascript:;"><img src="images/back.png" alt="返回"></a>')
 	}
+	showLayer(index)
 }
 
 const $zoom = $('.zoom')
@@ -283,7 +286,7 @@ const layer= {
 	{
 		'show': false,
 		'target': '#slide-02 .btn-1',
-		'layer': `<img src="images/02/layer.png" class="layer-2 animated fadeIn delay6 layer">`,
+		'layer': `<img src="images/02/layer.png" class="animated fadeIn delay6 layer">`,
 		'mask' : '',
 		'top': 38,
 		'left': 24,
@@ -359,7 +362,7 @@ const layer= {
 
 	]
 }
-const $body = $(document.body)
+
 
 const w = $(window).width()
 const h = $(window).height()
@@ -383,17 +386,17 @@ function showLayer(index) {
 				}
 				$(item.target).before($layer)
 			} 
-			if (item.top) {
-				setTimeout(function(){
-					const postion = $(item.target).offset()
-					//let scacleY = height / 1080
-					scacleX = scacleX > 1 ? 1 : scacleX
-					$layer.offset({
-						top: postion.top - item.top * scacleX,
-						left: postion.left + item.left * scacleX
-					})
-				}, 1000)
-			}	
+			// if (item.top) {
+			// 	setTimeout(function(){
+			// 		const postion = $(item.target).offset()
+			// 		//let scacleY = height / 1080
+			// 		scacleX = scacleX > 1 ? 1 : scacleX
+			// 		$layer.offset({
+			// 			top: postion.top - item.top * scacleX,
+			// 			left: postion.left + item.left * scacleX
+			// 		})
+			// 	}, 1000)
+			// }	
 		}	
 	}	
 }
