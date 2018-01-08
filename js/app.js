@@ -147,8 +147,10 @@ let prev = null
 const $body = $(document.body)
 function toggleAnimation(el, add = true) {
     const $el = $(el)
-    const index = $el.data('index')
-	prev = $el.attr('id')
+	const index = $el.data('index')
+	if ([2,3,7,12,14,18,21,25,30,38, 44].indexOf(index) > -1) {
+		prev = $el.attr('id')
+	}
 	const styles = config[index - 1]
 	
 	//console.log(styles)

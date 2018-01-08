@@ -226,7 +226,9 @@ function toggleAnimation(el) {
 
 	var $el = $(el);
 	var index = $el.data('index');
-	prev = $el.attr('id');
+	if ([2, 3, 7, 12, 14, 18, 21, 25, 30, 38, 44].indexOf(index) > -1) {
+		prev = $el.attr('id');
+	}
 	var styles = _animate.config[index - 1];
 
 	//console.log(styles)
