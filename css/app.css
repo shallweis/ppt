@@ -210,13 +210,9 @@
 }
 
 #slide-03 .desc {
-    position: absolute;
+    position: fixed;
     right: -320px;
     top: 60px
-}
-
-#slide-03 .desc img {
-    transform: scale(0.9);
 }
 
 #slide-03 .icon {
