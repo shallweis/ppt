@@ -204,8 +204,8 @@
 }
 
 #slide-03 .title {
-    position: absolute;
-    top: -140px;
+    position: fixed;
+    top: -20%;
     right: -100px;
 }
 
