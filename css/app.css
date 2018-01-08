@@ -35,7 +35,7 @@
     height: 500px;
     background-size:contain;
     position: absolute !important;
-    left: 750px;
+    left: 720px;
     top :-50px;
 }
 .controls-arrow {
@@ -52,10 +52,9 @@
 
 #slide-02 .f1 {
     position:absolute;
-    left: 180px;
+    left: 150px;
     top: -160px;
     z-index: 100;
-    /* transform: scale(0.8) */
 } 
 
 #slide-02 .f3{
@@ -156,17 +155,23 @@
 }
 
 #slide-02 .btn-1{
-    left: -190px;
-    top: 500px;
+    left: -240px;
+    top: 600px;
+    position: fixed !important;
+    z-index: 1111
+}
+
+#slide-02 .layer {
+    left: 10px;
+    top: -30px;
     position: absolute !important;
-    zoom: 1.2
+    z-index: 9999
 }
 
 #slide-02 .btn-2{
     right:-200px;
     top:-80px;
     position: absolute !important;
-    zoom: 1.2
 }
 
 .twoPosition{
@@ -199,16 +204,15 @@
 }
 
 #slide-03 .title {
-    transform: scale(0.8);
     position: absolute;
-    top: -200px;
+    top: -140px;
     right: -100px;
 }
 
 #slide-03 .desc {
     position: absolute;
     right: -320px;
-    top: -20px
+    top: 60px
 }
 
 #slide-03 .desc img {
@@ -216,10 +220,9 @@
 }
 
 #slide-03 .icon {
-    transform: scale(0.8);
     position: fixed;
     right: -340px;
-    bottom: -160px;
+    bottom: -27%;
 }
 
 #slide-03 .left {
@@ -233,17 +236,18 @@
 
 #slide-03 .btn-1 {
     position: absolute;
-    top :100px
+    top :0px;
+    z-index: 1111;
 }
 
 #slide-03 .btn-2 {
     position: absolute;
-    top :250px
+    top :120px
 }
 
 #slide-03 .btn-3 {
     position: absolute;
-    top :400px
+    top :240px
 }
 
 #slide-05 .title {
@@ -406,39 +410,39 @@
 }
 
 #slide-10 .f1 {
-    width: 1200px;
+    width: 1700px;
     text-align: left;
     position: absolute;
-    left: 50%;
-    margin-left: -650px;
+    left: -400px
 }
 
 #slide-10 .f1 img{
     /* width: 1200px; */
-    margin: 10px 20px
+    margin: 10px 5px
 }
 #slide-10 .title2{
     /* width: 1200px; */
    position: absolute;
-   left: -320px;
+   left: -400px;
    /*left: 50%;
    transform: translate(-50%);*/
-   top: 200px;
+   top: 300px;
 }
 
 #slide-10 .f2 {
-    width: 1200px;
+    width: 1700px;
     text-align: left;
     position: absolute;
-    left: 50%;
-    margin-left: -650px;
-    top: 300px;
+    left: -400px;
+    top: 400px;
 }
 
 #slide-10 .f2 > div{
    display: inline-block;
-   width: 290px;
-   vertical-align: top
+   width: 300px;
+   vertical-align: top;
+   zoom: 1.4;
+   text-align: left
 }
 
 #slide-10 .f2 > div .img1{
@@ -465,13 +469,13 @@
 
 #slide-14 .left .btn-2{
     position: absolute;
-    top: 180px;
+    top: 140px;
     left: -100px;
 }
 
 #slide-14 .left .btn-3{
     position: absolute;
-    top: 320px;
+    top: 240px;
     left: -100px;
 }
 
@@ -538,16 +542,19 @@
     position: absolute;
     top: 410px;
     left: -300px;
+    zoom:1.2
 }
 #slide-06 .bg2{
     position: absolute;
     left: 691px;
     top: 145px;
+     zoom:1.2
 }
 #slide-06 .bg3{    
     position: absolute;
     left: 145px;
     top: 190px;
+     zoom:1.2
 }
 #slide-07 .btn{
     position: absolute;
@@ -556,20 +563,21 @@
 
 #slide-07 .left{
     position: absolute;
-    top:0;
-     left: -420px;
+    top:-50px;
+    left: -420px;
 }
 #slide-07 .btn-1{
-    top: 20px;
+    top: 150px;
+    z-index: 1111
 }
 #slide-07 .btn-2{
-    top: 165px;
+    top: 270px;
 }
 #slide-07 .btn-3{
-    top: 310px;
+    top: 390px;
 }
 #slide-07 .btn-4{
-    top: 455px;
+    top: 510px;
     z-index: 3
 }
 #slide-07 .z5{
@@ -577,13 +585,13 @@
 }
 #slide-07 .fb5{
     position: absolute;
-    right: -800px;
-    top: -150px;
+    left: 1400px;
+    top: -250px;
 }
 #slide-07 .fb4{
     position: absolute;
-    right:200px;
-    top: 700px;
+    right:360px;
+    top: 600px;
 }
 #slide-07 .fb3{
     position: absolute;
@@ -593,15 +601,15 @@
 
 #slide-07 .zfb6 {
     position: absolute;
-    left: -1600px;
-    top: -250px;
+    left: -1000px;
+    top: -200px;
     zoom: 1.5
 }
 
 #slide-07 .zfb7 {
     position: absolute;
-    left: -400px;
-    top: 300px;
+    left: 90px;
+    top: 180px;
     zoom: 1.5
 }
 #slide-07 .fb2{
@@ -611,8 +619,9 @@
 }
 #slide-07 .fb1{
     position: absolute;
-    left: 29px;
+    left: -300px;
     top: 700px;
+    z-index: -1
 }
 .glow {
     animation-name: glow;
@@ -634,7 +643,7 @@
 
 #slide-11 .txt11{
     position: absolute;
-    left:-380px;
+    left:-400px;
 }
 #slide-11 .txt11-1{
     top: 36px;
@@ -648,7 +657,7 @@
 #slide-11 .txt11-4{
     position: absolute;
     top: 36px;
-    left: -350px;
+    left: -370px;
 }
 #slide-11 .txt11-5{
     position: absolute;
@@ -664,24 +673,26 @@
     position: absolute;top:650px;
 }
 #slide-11 .txt11-6{
-    left: -195px;
+    left: -215px;
 }
 #slide-11 .txt11-7{
-    left: 290px;
+    left: 270px;
 }
 #slide-11 .txt11-8{
     left: 843px;
-    width: 478px;
+    width: 458px;
     height: 49px;
+    left: 823px;
 }
 #slide-11 .txt11-9{
     position: absolute;
     top: 715px;
-    left: -487px;
+    left: -510px;
 }
 #slide-11 .txt11-10{
     position: absolute;
-    top:750px;left: -300px;
+    top:750px;
+    left: -320px;
 }
 #slide-11 .txt11-11{
     position: absolute;
@@ -702,7 +713,7 @@
 #slide-11 .txt11-14{
     position: absolute;
     top: 724px;
-    left: 1070px;
+    left: 1040px;
 }
 #slide-11 .txt11-15{
     position: absolute;
@@ -732,20 +743,19 @@
 }
 #slide-13 .txt13-2{
     position: absolute;
-    left: -320px;
+    left: -400px;
     top: 7px;
-    height:480px;
 }
 
 #slide-13 .txt13-3{
     position: absolute;
-    top: 510px;
-    left: -320px;
+    top: 460px;
+    left: -400px;
 }
 #slide-13 .txt13-4{
     position: absolute;
-    top: 545px;
-    left: -320px;
+    top: 500px;
+    left: -400px;
 }
 #slide-13 .txt13-5{
     position: absolute;
@@ -756,13 +766,13 @@
 #slide-13 .txt13-6{
     position: absolute;
     top: 1060px;
-    left: 1300px;
+    left: 1850px;
     zoom: 0.5
 }
 #slide-13 .txt13-7{
     position: absolute;
-    top: 650px;
-    left: 210px;
+    top: 620px;
+    left: 320px;
 }
 #slide-13 .txt13-box{position: absolute;}
 .flips{display: block;}
@@ -774,7 +784,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0,0,0,.7);
+    background: rgba(0,0,0,.5);
     z-index: 999;
     display: none;
 }
@@ -790,10 +800,9 @@
 /**---------------------15-----------------------*/
 
 #slide-15 .text {
-    width: 1800px;
+   
     position: absolute;
-    left: 50%;
-    margin-left: -900px;
+    left: -400px;
 }
 
 #slide-15 .product {
@@ -810,15 +819,15 @@
 }
 
 #slide-15 .title{
-    left: 100px;
+    left: 120px;
 }
 
 #slide-16 .text {
-    width: 1700px;
+    width: 1750px;
     position: absolute;
     left: 50%;
     top: 60px;
-    margin-left: -850px;
+    margin-left: -875px;
     text-align: left;
 }
 
@@ -836,39 +845,46 @@
 }
 
 #slide-16 .title{
-    left: 100px;
+    left: 120px;
 }
 
 #slide-17 .text{
    text-align: left;
    position: absolute;
-   left: -640px;
-   top: 40px;
-   zoom: 0.5
+   left: -400px;
+   top: 30px;
 }
 
 #slide-17 .product{
     position: absolute;
-    width: 1400px;
-    left: -320px;
-    top: 200px;
-    display: -webkit-box
+    left: -400px;
+    top: 220px;
+    display: -webkit-flex;
+    display: flex;
  }
 
  #slide-17 .product > div {
    flex: 1;
+   text-align: center;
+ }
+
+ #slide-17 .product img{ 
+     zoom: 1.2
  }
 
  #slide-17 .product .left {
-    margin-right: 40px
+    margin-right: 100px
 }
 
 #slide-17 .pro {
     position: absolute;
-    width: 1400px;
-    left: -320px;
-    top: 70px;
+    width: 1800px;
+    left: -400px;
+    top: 80px;
     text-align: left !important;
+}
+#slide-17 .pro img {
+    zoom: 1.25
 }
 
 #slide-17 .a2 {
@@ -896,7 +912,7 @@
 
 #slide-18 .left .btn-2 {
     position: absolute;
-    top: 240px;
+    top: 220px;
     left: -200px;
  }
 
@@ -911,7 +927,7 @@
 
 #slide-19 .left {
     position: absolute;
-    left: -320px;
+    left: -400px;
     top: 0px;
  }
 
@@ -1028,13 +1044,13 @@
 
 #slide-21 .btn-2 {
     position: absolute;
-    top: 140px;
+    top: 120px;
     left: -300px;
 }
 
 #slide-21 .btn-3 {
     position: absolute;
-    top: 280px;
+    top: 240px;
     left: -300px;
 }
 
@@ -1104,7 +1120,7 @@
 #slide-23 .title2 {
     text-align: left;
     position: absolute;
-    left: -320px;
+    left: -400px;
 }
 
 #slide-24 .left {
@@ -1153,7 +1169,7 @@
 
 #slide-25 .btn-2 {
     position: absolute;
-    top: 240px;
+    top: 220px;
     left: -200px;
  }
 
@@ -1168,7 +1184,7 @@
 
 #slide-26 .top {
     position: absolute;
-    left: -320px
+    left: -400px
 }
 
 #slide-26 .left {
@@ -1215,13 +1231,13 @@
 #slide-26 .center {
     position: absolute;
     top: 150px;
-    left: 150px;
+    left: 100px;
 }
 
 #slide-27 .left {
     position: absolute;
     top: 100px;
-    left: -320px;
+    left: -400px;
 }
 
 #slide-27 .left img{
@@ -1237,12 +1253,12 @@
 #slide-27 .right {
     position: absolute;
     top: 100px;
-    left: 400px;
+    left: 380px;
 }
 
 #slide-27 .top {
     position: absolute;
-    left: -320px;
+    left: -400px;
     top: 10px
 }
 #slide-27 .bottom {
@@ -1339,52 +1355,49 @@
    position: absolute;
    top: 20px;
    left: 0;
+   z-index: 1111
+
  }
 
  #slide-30 .btn-2 {
     position: absolute;
-   top: 160px;
+   top: 140px;
    left: 0;
  }
 
  #slide-30 .btn-3 {
     position: absolute;
-   top: 300px;
+   top: 260px;
    left: 0;
  }
 
  #slide-30 .btn-4 {
     position: absolute;
-    top: 440px;
+    top: 380px;
     left: 0;
  }
 #slide-30 .btn-5 {
     position: absolute;
-    left: 1200px;
+    left: 1000px;
     top: -100px;
-    zoom: 0.7
  }
 
 #slide-30 .btn-6 {
     position: absolute;
-    left: 1400px;
+    left: 1200px;
     top: 220px;
-    zoom: 0.7
-
  }
 
  #slide-30 .btn-7 {
     position: absolute;
-    left: 1150px;
+    left: 950px;
     top: 500px;
-    zoom: 0.7
-
  }
 
 #slide-31 .bg {
     position: absolute;
-    left: -320px;
-    zoom: 1.2
+    left: -250px;
+    zoom: 1.5
 }
 
 
@@ -1501,56 +1514,56 @@
 }
 #slide-33 .txt1{
     position: absolute;
-    left: 85px;
+    left: 5px;
     top: 353px;
 }
 #slide-33 .txt2{
     position: absolute;
-    left: -320px;
+    left: -400px;
     top: 254px;
 }
 #slide-33 .txt3{
     position: absolute;
-    left: -320px;
+    left: -400px;
     top: 10px;
 }
 #slide-33 .txt4{
     position: absolute;
-    left: 240px;
+    left: 160px;
     top: 10px;
 }
 #slide-33 .txt5{
     position: absolute;
-    left: 365px;
+    left: 285px;
     top: 287px;
 }
 #slide-33 .txt6{
     position: absolute;
-    left: -320px;
+    left: -400px;
     top: 580px;
 }
 #slide-33 .txt7{
     position: absolute;
-    left: 220px;
+    left: 140px;
     top: 580px;
 }
 #slide-33 .txt8{
     position: absolute;
-    left: 2000px;
-    top: 100px;
-    zoom: 0.4
+    left: 1500px;
+    top: 50px;
+    zoom: 0.5
 }
 
 #slide-34 .txt1{
-    zoom:1.2;
+    zoom: 1.5;
     position: absolute;
-    left: -270px;
-    top: 73px;
+    left: -265px;
+    top: 50px;
    
 }
 #slide-34 .txt2{
     position: absolute;
-    left: -320px;
+    left: -400px;
     top: 273px;
 }
 #slide-34 .txt3{
@@ -1566,7 +1579,7 @@
 }
 #slide-34 .txt5{
     position: absolute;
-    left: -320px;
+    left: -400px;
     top: 18px;
 }
 #slide-34 .txt6{
@@ -1633,7 +1646,7 @@
 
 #slide-36 .txt1{
     position: absolute;
-    left: -320px;
+    left: -400px;
     top: 120px;
 }
 #slide-36 .txt2{
@@ -1648,9 +1661,7 @@
 
 #slide-37 .a1 {
     position: absolute;
-    left: 50%;
-    transform: translate(-50%);
-    zoom:0.94
+    left: -400px
     /* width: 1800px; */
 }
 #slide-38 .left {
@@ -1660,25 +1671,25 @@
 #slide-38 .left .btn-1{
     position: absolute;
     top: -50px;
+    z-index: 1111
 }
 #slide-38 .left .btn-2{
     position: absolute;
-    top: 100px;
+    top: 70px;
 }
 #slide-38 .left .btn-3{
     position: absolute;
-    top: 250px;
+    top: 190px;
 }
 #slide-38 .left .btn-4{
     position: absolute;
-    top: 400px;
+    top:310px;
 }
 
 #slide-38 .btn-5{
     position: absolute;
-    top: 80px;
-    left: 2000px;
-    zoom: 0.5
+    top: -80px;
+    left: 1200px;
 }
 #slide-39 .content {
     position: absolute;
@@ -1699,19 +1710,22 @@
 
 #slide-40 .content {
     position: absolute;
-    left: -320px;
+    left: -400px;
 }
 
+#slide-40 .f1 {
+    width: 1700px
+}
 #slide-40 .content div{
     margin-bottom: 60px;
 }
 
 #slide-40 .f1 img{
-   margin-right: 60px
+   margin-right: 150px
 }
 
 #slide-40 .f3 div{
-    width: 450px;
+    width: 555px;
     display: inline-block;
     text-align: left;
     vertical-align: top
@@ -1728,14 +1742,14 @@
 
 #slide-42 .left {
     position: absolute;
-    left: -240px;
+    left: -320px;
     top:70px;
     z-index: 2
 }
 
 #slide-42 .content {
     position: absolute;
-    left: -320px;
+    left: -400px;
     top: 70px
 }
 #slide-42 .content img{
@@ -1744,21 +1758,21 @@
 
 #slide-42 .a5 {
     position: absolute;
-    left: 1200px;
+    left: 1100px;
     top: 150px;
     z-index: 2
 }
 
 #slide-42 .a6 {
     position: absolute;
-    left: 1050px;
+    left: 950px;
     top:250px;
     z-index: 2
 }
 
 #slide-42 .title2{
     position: absolute;
-    left: -320px;
+    left: -400px;
 }
 
 /* #slide-42 .page-title .title{
@@ -1768,14 +1782,15 @@
 
 #slide-43 .title2 {
     position: absolute;
-    left: -320px;
+    left: -400px;
     top: 20px
 }
 
 #slide-43 .content {
     position: absolute;
     left: -320px;
-    top: 80px
+    top: 80px;
+    zoom:1.25
 }
 #slide-43 .content img{
    margin-bottom: 10px;
@@ -1791,10 +1806,11 @@
     top :200px;
     left: -250px;
     position: absolute;
+    z-index: 1111
 }
 
 #slide-44 .left .btn-2 {
-    top :350px;
+    top :320px;
     left: -250px;
     position: absolute;
 }
@@ -1850,9 +1866,73 @@
     position: fixed !important;
     top: 30px;
     right: 50px;
-    z-index: 9999;
+    z-index: 998;
     opacity: 0;
 }
+
+.page-title img {
+    position:absolute;
+    left: 120px !important
+}
+
+#mask{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.7);
+    z-index: 1001
+}
+
+.layer {
+    position: absolute;
+    z-index: 9999;
+}
+
+.layer-back {
+    position: fixed !important;
+    top: 33px;
+    right: 55px;
+    z-index: 999;
+}
+
+.layer-3 {
+    position: absolute;
+    top: -113px;
+    left: 3px;
+    z-index: 1112
+}
+
+.layer-7 {
+    position: absolute;
+    top: 34px;
+    left: -3px;
+    z-index: 1112
+}
+
+.layer-38{
+    position: absolute;
+    left: -3px;
+    top: -165px;
+    z-index: 1112
+}
+
+.layer-44{
+    position: absolute;
+    left: -255px;
+    top: 84px;
+    z-index: 1112
+}
+
+.layer-30 {
+    position: absolute;
+    left: -3px;
+    top: -97px;
+    z-index: 1112
+}
+
+
 
 
 

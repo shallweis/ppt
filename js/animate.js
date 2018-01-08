@@ -25,9 +25,6 @@
     {
         name: 'zfb3',
         cls: 'animated fadeIn delay6'
-    }, {
-        name: 'b1',
-        cls: 'animated infinite pulse'
     }
     ], [//3
         {
@@ -159,14 +156,14 @@
         name: 'zfb1',
         cls: 'animated   pulse infinite'
     },
-    /*{
-        name: 'zfb2',
+    {
+        name: 'zfb6',
         cls: 'animated   pulse infinite'
     },
     {
-        name: 'zfb3',
+        name: 'zfb7',
         cls: 'animated   pulse infinite'
-    },*/
+    },
     {
         name: 'zfb4',
         cls: 'animated   pulse infinite'

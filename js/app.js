@@ -133,9 +133,13 @@ Reveal.addEventListener( 'ready', function( event ) {
 
 Reveal.addEventListener('slidechanged', function( event ) {
 	//back.removeClass('animated fadeIn delay2')
+	$('#mask').remove()
+	$('.layer').remove()
 	$('.back-btn').remove()
     toggleAnimation(event.currentSlide)
-    toggleAnimation(event.previousSlide, false)
+	toggleAnimation(event.previousSlide, false)
+	
+	
 	// event.previousSlide, event.currentSlide, event.indexh, event.indexv
 }); 
 
@@ -145,6 +149,7 @@ function toggleAnimation(el, add = true) {
     const index = $el.data('index')
 	prev = $el.attr('id')
 	const styles = config[index - 1]
+	showLayer(index)
 	//console.log(styles)
     if (styles) {
         for (let style of styles) {
@@ -196,15 +201,17 @@ $(".flips2").click(function(e){
 const $hover = $('.hover')
 
 $hover.on('mouseover', function() {
-	let $img = $(this).find('img')
+	let $img = $($(this).find('img')[0])
 	let hover = $img.data('hover')
-	$img.attr('src', hover + '.png') 
+	$img.attr('src', hover) 
 })
 
 $hover.on('mouseleave', function() {
-	let $img = $(this).find('img')
+	let $img = $($(this).find('img')[0])
 	let hover = $img.data('hover')
-	$img.attr('src', hover + '-1.png') 
+	let a = hover.replace('over', 'nor')
+	console.log(a)
+	$img.attr('src', a) 
 })
 
 $('.full').on('click', function(){
@@ -215,7 +222,7 @@ $('.full').on('click', function(){
 	}
 })
 
-
+let scacleX = 0
 function resize(a = 0) {
 	const width = $(window).width()
 	const height = $(window).height()
@@ -254,4 +261,149 @@ $(document.body).on('click', '.back-btn', function(){
 	event.preventDefault()
 	window.location = $(this).attr('href')
 })*/
+
+/*
+{
+		'show': false,
+		'target': '#slide-03 .btn-1',
+		'layer': `<img src="images/03/layer.png" class="layer-3 animated fadeIn delay6 layer">`,
+		'mask' : '<div class="animated fadeIn delay5" id="mask"></div>',
+		'top': 140,
+		'left': 10,
+	},
+*/ 
+const layer= {
+	2: [
+	{
+		'show': false,
+		'target': '.back-btn',
+		'layer': `<div><img src="images/03/layer1.png" class="layer-2 animated fadeIn delay6 layer layer-back"></div>`,
+		'mask' : '<div class="animated fadeIn delay5" id="mask"></div>',
+	},
+	{
+		'show': false,
+		'target': '#slide-02 .btn-1',
+		'layer': `<img src="images/02/layer.png" class="layer-2 animated fadeIn delay6 layer">`,
+		'mask' : '',
+		'top': 38,
+		'left': 24,
+		'width': '281px',
+		'height': '147px'
+	}
+	],
+	3:[ {
+		'show': false,
+		'target': '.back-btn',
+		'layer': `<img src="images/03/layer1.png" class="layer-4 animated fadeIn delay6 layer layer-back">`,
+		'mask' : '<div class="animated fadeIn delay5" id="mask"></div>',
+	},
+	{
+		'show': false,
+		'target': '#slide-03 .btn-1',
+		'layer': `<div><img src="images/03/layer.png" class="layer-3 animated fadeIn delay6 layer"></div>`,
+		'mask' : '',
+	},
+
+	],
+	7:[ {
+		'show': false,
+		'target': '.back-btn',
+		'layer': `<img src="images/03/layer1.png" class="animated fadeIn delay6 layer layer-back">`,
+		'mask' : '<div class="animated fadeIn delay5" id="mask"></div>',
+	},
+	{
+		'show': false,
+		'target': '#slide-07 .btn-1',
+		'layer': `<div><img src="images/03/layer.png" class="layer-7 animated fadeIn delay6 layer"></div>`,
+		'mask' : '',
+	}
+	],
+	30:[ {
+		'show': false,
+		'target': '.back-btn',
+		'layer': `<img src="images/03/layer1.png" class="animated fadeIn delay6 layer layer-back">`,
+		'mask' : '<div class="animated fadeIn delay5" id="mask"></div>',
+	},
+	{
+		'show': false,
+		'target': '#slide-30 .btn-1',
+		'layer': `<div><img src="images/03/layer.png" class="layer-30 animated fadeIn delay6 layer"></div>`,
+		'mask' : '',
+	}
+	],
+	38:[ {
+		'show': false,
+		'target': '.back-btn',
+		'layer': `<img src="images/03/layer1.png" class="animated fadeIn delay6 layer layer-back">`,
+		'mask' : '<div class="animated fadeIn delay5" id="mask"></div>',
+	},
+	{
+		'show': false,
+		'target': '#slide-38 .btn-1',
+		'layer': `<div><img src="images/03/layer.png" class="layer-38 animated fadeIn delay6 layer"></div>`,
+		'mask' : '',
+	}
+	],
+	44:[ {
+		'show': false,
+		'target': '.back-btn',
+		'layer': `<img src="images/03/layer1.png" class="animated fadeIn delay6 layer layer-back">`,
+		'mask' : '<div class="animated fadeIn delay5" id="mask"></div>',
+	},
+	{
+		'show': false,
+		'target': '#slide-44 .btn-1',
+		'layer': `<div><img src="images/03/layer.png" class="layer-44 animated fadeIn delay6 layer"></div>`,
+		'mask' : '',
+	}
+
+	]
+}
+const $body = $(document.body)
+
+const w = $(window).width()
+const h = $(window).height()
+function showLayer(index) {
+	let scacleX = w / 1920
+	if (!layer[index]) return
+	for(let item of layer[index]) {
+		if (!item.show) {
+			let $layer = $(item.layer)
+			if (!item.show) {
+				item.show = true
+				if (item.mask) {
+					const current = Reveal.getCurrentSlide()
+					const $mask = $(item.mask).css({
+						width: w / scacleX * 10000,
+						height:h /scacleX * 20000,
+						left: '-500%',
+						top: '-2000%'
+					})
+					$(current).append($mask)
+				}
+				$(item.target).before($layer)
+			} 
+			if (item.top) {
+				setTimeout(function(){
+					const postion = $(item.target).offset()
+					//let scacleY = height / 1080
+					scacleX = scacleX > 1 ? 1 : scacleX
+					$layer.offset({
+						top: postion.top - item.top * scacleX,
+						left: postion.left + item.left * scacleX
+					})
+				}, 1000)
+			}	
+		}	
+	}	
+}
+$(document.body).on('click', '#mask', function(){
+	$(this).remove()
+	$('.layer').remove()
+})
+
+const current = Reveal.getCurrentSlide()
+const index = $(current).data('index')
+//showLayer(index)
+
 
