@@ -144,10 +144,14 @@ Reveal.addEventListener('slidechanged', function( event ) {
 }); 
 
 let prev = null
+let currentIndex = null
 const $body = $(document.body)
 function toggleAnimation(el, add = true) {
     const $el = $(el)
 	const index = $el.data('index')
+	if (add) {
+		currentIndex = index
+	}
 	if ([2,3,7,12,14,18,21,25,30,38, 44].indexOf(index) > -1) {
 		prev = $el.attr('id')
 	}
@@ -244,11 +248,59 @@ $(window).on('resize', function(){
 })
 
 resize()
+const node = {
+	45: 44,
+	46: 44,
+	44: 2,
+	40: 38,
+	41: 38,
+	42:38,
+	43: 38,
+	30:2,
+	31: 30,
+	32:30,
+	33: 30,
+	34:30,
+	35: 30,
+	36:30,
+	37:30,
+	38: 2,
+	39:38,
+	14: 7,
+	15: 14,
+	16:14,
+	17:14,
+	18:7,
+	19: 18,
+	20: 18,
+	21: 7,
+	22: 21,
+	23: 21,
+	24:21,
+	25: 7,
+	26: 25,
+	27:25,
+	28: 27,
+	29:27,
+	12: 7,
+	13: 12,
+	8: 7,
+	9: 7,
+	10: 7,
+	11: 7,
+	3: 2,
+	2:1,
+	4:3,
+	5:3,
+	6:3,
+	7:2
+}
 
 $(document.body).on('click', '.back-btn', function(){
-	if (prev) {
-		window.location = '#/' + prev
-	}
+	if (node[currentIndex]) {
+		let p = node[currentIndex] < 10 ? '0' + node[currentIndex] : node[currentIndex]
+		window.location = '#/slide-' + p
+	}	
 })
 //let i = 12;
 /*window.addEventListener("hashchange", function(){
@@ -406,9 +458,4 @@ $(document.body).on('click', '#mask', function(){
 	$(this).remove()
 	$('.layer').remove()
 })
-
-const current = Reveal.getCurrentSlide()
-const index = $(current).data('index')
 //showLayer(index)
-
-
