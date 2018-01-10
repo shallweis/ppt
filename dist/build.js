@@ -448,56 +448,56 @@ var layer = {
 		'show': false,
 		'target': '.back-btn',
 		'layer': '<img src="images/03/layer1.png" class="layer-4 animated fadeIn delay6 layer layer-back">',
-		'mask': '<div class="animated fadeIn delay5" id="mask"></div>'
+		'mask': ''
 	}, {
 		'show': false,
 		'target': '#slide-03 .btn-1',
 		'layer': '<div><img src="images/03/layer.png" class="layer-3 animated fadeIn delay6 layer"></div>',
-		'mask': ''
+		'mask': '<div class="animated fadeIn delay5" id="mask"></div>'
 	}],
 	7: [{
 		'show': false,
 		'target': '.back-btn',
 		'layer': '<img src="images/03/layer1.png" class="animated fadeIn delay6 layer layer-back">',
-		'mask': '<div class="animated fadeIn delay5" id="mask"></div>'
+		'mask': ''
 	}, {
 		'show': false,
 		'target': '#slide-07 .btn-1',
 		'layer': '<div><img src="images/03/layer.png" class="layer-7 animated fadeIn delay6 layer"></div>',
-		'mask': ''
+		'mask': '<div class="animated fadeIn delay5" id="mask"></div>'
 	}],
 	30: [{
 		'show': false,
 		'target': '.back-btn',
 		'layer': '<img src="images/03/layer1.png" class="animated fadeIn delay6 layer layer-back">',
-		'mask': '<div class="animated fadeIn delay5" id="mask"></div>'
+		'mask': ''
 	}, {
 		'show': false,
 		'target': '#slide-30 .btn-1',
 		'layer': '<div><img src="images/03/layer.png" class="layer-30 animated fadeIn delay6 layer"></div>',
-		'mask': ''
+		'mask': '<div class="animated fadeIn delay5" id="mask"></div>'
 	}],
 	38: [{
 		'show': false,
 		'target': '.back-btn',
 		'layer': '<img src="images/03/layer1.png" class="animated fadeIn delay6 layer layer-back">',
-		'mask': '<div class="animated fadeIn delay5" id="mask"></div>'
+		'mask': ''
 	}, {
 		'show': false,
 		'target': '#slide-38 .btn-1',
 		'layer': '<div><img src="images/03/layer.png" class="layer-38 animated fadeIn delay6 layer"></div>',
-		'mask': ''
+		'mask': '<div class="animated fadeIn delay5" id="mask"></div>'
 	}],
 	44: [{
 		'show': false,
 		'target': '.back-btn',
 		'layer': '<img src="images/03/layer1.png" class="animated fadeIn delay6 layer layer-back">',
-		'mask': '<div class="animated fadeIn delay5" id="mask"></div>'
+		'mask': ''
 	}, {
 		'show': false,
 		'target': '#slide-44 .btn-1',
 		'layer': '<div><img src="images/03/layer.png" class="layer-44 animated fadeIn delay6 layer"></div>',
-		'mask': ''
+		'mask': '<div class="animated fadeIn delay5" id="mask"></div>'
 	}]
 };
 
@@ -526,7 +526,8 @@ function showLayer(index) {
 							left: '-500%',
 							top: '-2000%'
 						});
-						$(current).append(_$mask);
+						console.log(item.maskBox);
+						$(item.target).before(_$mask);
 					}
 					$(item.target).before($layer);
 				}
