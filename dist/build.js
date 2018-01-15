@@ -81,21 +81,21 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 _reveal2.default.initialize({
 
 	// Display presentation control arrows
-	controls: true,
+	controls: false,
 
 	// Help the user learn the controls by providing hints, for example by
 	// bouncing the down arrow when they first encounter a vertical slide
-	controlsTutorial: true,
+	// controlsTutorial: true,
 
 	// Determines where controls appear, "edges" or "bottom-right"
-	controlsLayout: 'bottom-right',
+	//controlsLayout: 'bottom-right',
 
 	// Visibility rule for backwards navigation arrows; "faded", "hidden"
 	// or "visible"
-	controlsBackArrows: 'faded',
+	//controlsBackArrows: 'faded',
 
 	// Display a presentation progress bar
-	progress: true,
+	progress: false,
 
 	// Set default timing of 2 minutes per slide
 	defaultTiming: 120,
@@ -107,7 +107,7 @@ _reveal2.default.initialize({
 	history: true,
 
 	// Enable keyboard shortcuts for navigation
-	keyboard: true,
+	keyboard: false,
 
 	// Enable the slide overview mode
 	overview: true,
@@ -206,6 +206,15 @@ _reveal2.default.initialize({
 
 _reveal2.default.addEventListener('ready', function (event) {
 	toggleAnimation(event.currentSlide);
+	var $el = $(event.currentSlide);
+	var index = $el.data('index');
+	if (index == 1) {
+		$('.slide-background.present').css({
+			'background': 'url("images/01/bg.jpg") no-repeat center center, url("images/01/01.png") no-repeat left center',
+			'background-size': 'cover, 100%',
+			'background-blend-mode': 'multiply'
+		});
+	}
 });
 
 _reveal2.default.addEventListener('slidechanged', function (event) {
@@ -214,6 +223,14 @@ _reveal2.default.addEventListener('slidechanged', function (event) {
 	$('.layer').remove();
 	$('.back-btn').remove();
 	toggleAnimation(event.currentSlide);
+	var $el = $(event.currentSlide);
+	var index = $el.data('index');
+	if (index == 1) {
+		$('.slide-background .present').css({
+			'background': 'url("images/01/bg.jpg") no-repeat center center, url("images/01/01.png") no-repeat left cneter',
+			'background-blend-mode': 'multiply'
+		});
+	}
 	toggleAnimation(event.previousSlide, false);
 
 	// event.previousSlide, event.currentSlide, event.indexh, event.indexv
@@ -433,72 +450,80 @@ var layer = {
 		'show': false,
 		'target': '.back-btn',
 		'layer': '<div><img src="images/03/layer1.png" class="layer-2 animated fadeIn delay6 layer layer-back"></div>',
-		'mask': '<div class="animated fadeIn delay5" id="mask"></div>'
+		'mask': ''
 	}, {
 		'show': false,
 		'target': '#slide-02 .btn-1',
 		'layer': '<img src="images/02/layer.png" class="animated fadeIn delay6 layer">',
-		'mask': '',
-		'top': 38,
-		'left': 24,
-		'width': '281px',
-		'height': '147px'
-	}],
-	3: [{
-		'show': false,
-		'target': '.back-btn',
-		'layer': '<img src="images/03/layer1.png" class="layer-4 animated fadeIn delay6 layer layer-back">',
-		'mask': ''
-	}, {
-		'show': false,
-		'target': '#slide-03 .btn-1',
-		'layer': '<div><img src="images/03/layer.png" class="layer-3 animated fadeIn delay6 layer"></div>',
-		'mask': '<div class="animated fadeIn delay5" id="mask"></div>'
-	}],
-	7: [{
-		'show': false,
-		'target': '.back-btn',
-		'layer': '<img src="images/03/layer1.png" class="animated fadeIn delay6 layer layer-back">',
-		'mask': ''
-	}, {
-		'show': false,
-		'target': '#slide-07 .btn-1',
-		'layer': '<div><img src="images/03/layer.png" class="layer-7 animated fadeIn delay6 layer"></div>',
-		'mask': '<div class="animated fadeIn delay5" id="mask"></div>'
-	}],
-	30: [{
-		'show': false,
-		'target': '.back-btn',
-		'layer': '<img src="images/03/layer1.png" class="animated fadeIn delay6 layer layer-back">',
-		'mask': ''
-	}, {
-		'show': false,
-		'target': '#slide-30 .btn-1',
-		'layer': '<div><img src="images/03/layer.png" class="layer-30 animated fadeIn delay6 layer"></div>',
-		'mask': '<div class="animated fadeIn delay5" id="mask"></div>'
-	}],
-	38: [{
-		'show': false,
-		'target': '.back-btn',
-		'layer': '<img src="images/03/layer1.png" class="animated fadeIn delay6 layer layer-back">',
-		'mask': ''
-	}, {
-		'show': false,
-		'target': '#slide-38 .btn-1',
-		'layer': '<div><img src="images/03/layer.png" class="layer-38 animated fadeIn delay6 layer"></div>',
-		'mask': '<div class="animated fadeIn delay5" id="mask"></div>'
-	}],
-	44: [{
-		'show': false,
-		'target': '.back-btn',
-		'layer': '<img src="images/03/layer1.png" class="animated fadeIn delay6 layer layer-back">',
-		'mask': ''
-	}, {
-		'show': false,
-		'target': '#slide-44 .btn-1',
-		'layer': '<div><img src="images/03/layer.png" class="layer-44 animated fadeIn delay6 layer"></div>',
 		'mask': '<div class="animated fadeIn delay5" id="mask"></div>'
 	}]
+	// 3:[ {
+	// 	'show': false,
+	// 	'target': '.back-btn',
+	// 	'layer': `<img src="images/03/layer1.png" class="layer-4 animated fadeIn delay6 layer layer-back">`,
+	// 	'mask' : '',
+	// },
+	// {
+	// 	'show': false,
+	// 	'target': '#slide-03 .btn-1',
+	// 	'layer': `<div><img src="images/03/layer.png" class="layer-3 animated fadeIn delay6 layer"></div>`,
+	// 	'mask' : '<div class="animated fadeIn delay5" id="mask"></div>',
+	// },
+
+	// ],
+	// 7:[ {
+	// 	'show': false,
+	// 	'target': '.back-btn',
+	// 	'layer': `<img src="images/03/layer1.png" class="animated fadeIn delay6 layer layer-back">`,
+	// 	'mask' : '',
+	// },
+	// {
+	// 	'show': false,
+	// 	'target': '#slide-07 .btn-1',
+	// 	'layer': `<div><img src="images/03/layer.png" class="layer-7 animated fadeIn delay6 layer"></div>`,
+	// 	'mask' : '<div class="animated fadeIn delay5" id="mask"></div>',
+	// }
+	// ],
+	// 30:[ {
+	// 	'show': false,
+	// 	'target': '.back-btn',
+	// 	'layer': `<img src="images/03/layer1.png" class="animated fadeIn delay6 layer layer-back">`,
+	// 	'mask' : '',
+	// },
+	// {
+	// 	'show': false,
+	// 	'target': '#slide-30 .btn-1',
+	// 	'layer': `<div><img src="images/03/layer.png" class="layer-30 animated fadeIn delay6 layer"></div>`,
+	// 	'mask' : '<div class="animated fadeIn delay5" id="mask"></div>',
+	// }
+	// ],
+	// 38:[ {
+	// 	'show': false,
+	// 	'target': '.back-btn',
+	// 	'layer': `<img src="images/03/layer1.png" class="animated fadeIn delay6 layer layer-back">`,
+	// 	'mask' : '',
+	// },
+	// {
+	// 	'show': false,
+	// 	'target': '#slide-38 .btn-1',
+	// 	'layer': `<div><img src="images/03/layer.png" class="layer-38 animated fadeIn delay6 layer"></div>`,
+	// 	'mask' : '<div class="animated fadeIn delay5" id="mask"></div>',
+	// }
+	// ],
+	// 44:[ {
+	// 	'show': false,
+	// 	'target': '.back-btn',
+	// 	'layer': `<img src="images/03/layer1.png" class="animated fadeIn delay6 layer layer-back">`,
+	// 	'mask' : '',
+	// },
+	// {
+	// 	'show': false,
+	// 	'target': '#slide-44 .btn-1',
+	// 	'layer': `<div><img src="images/03/layer.png" class="layer-44 animated fadeIn delay6 layer"></div>`,
+	// 	'mask' : '<div class="animated fadeIn delay5" id="mask"></div>',
+	// }
+
+	// ]
 };
 
 var w = $(window).width();
