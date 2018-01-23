@@ -590,6 +590,14 @@ $(document.body).on('click', '#mask', function () {
 });
 //showLayer(index)
 
+$('#slide-44 .btn-3').on('click', function () {
+	var video = '<div id="video"><video src="./images/video.mp4" controls="controls" autoplay="true"></video></div>';
+	$('body').append(video);
+});
+$('body').on('click', '#video', function (e) {
+	$(this).remove();
+});
+
 /***/ }),
 /* 1 */
 /***/ (function(module, exports, __webpack_require__) {

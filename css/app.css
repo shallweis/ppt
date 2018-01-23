@@ -848,20 +848,18 @@
 }
 #slide-13 .txt13-5{
     position: absolute;
-    top: 1060px;
-    left: -480px;
-    zoom: 0.5
+    top: 490px;
+    left: -210px;
 }
 #slide-13 .txt13-6{
     position: absolute;
-    top: 1060px;
-    left: 1850px;
-    zoom: 0.5
+    top: 490px;
+    left: 980px;
 }
 #slide-13 .txt13-7{
     position: absolute;
     top: 620px;
-    left: 320px;
+    left: 345px;
 }
 #slide-13 .txt13-box{position: absolute;}
 .flips{display: block;}
@@ -1523,6 +1521,12 @@
     margin-top: -225px;
 }
 
+#slide-30 .right {
+    position: fixed;
+    top:50%;
+    margin-top: -225px;
+}
+
 #slide-30 .logo {
     position: fixed;
     left: -330px;
@@ -1579,8 +1583,8 @@
 
 #slide-31 .bg {
     position: absolute;
-    left: -260px;
-    zoom: 1.45
+    left: -360px;
+    /*zoom: 1.45*/
 }
 
 
@@ -2096,7 +2100,11 @@
 }
 
 #slide-43 .content .f6 .img2 {
-    margin-left: 80px
+    margin-left: 90px
+}
+
+#slide-43 .content .f7 .img3 {
+    margin-left: 5px
 }
 
 #slide-44 .left {
@@ -2127,9 +2135,8 @@
 
 #slide-44 .btn-3{
     position: absolute;
-    left: 2100px;
-    top: 650px;
-    zoom: 0.5
+    left: 1050px;
+    top: -20px;
 }
 
 #slide-45 .content{
@@ -2241,7 +2248,24 @@
     left: -723px;
     top: 518px;
     position: absolute !important;
-    z-index: 998;
+    z-index: 1112;
+}
+
+#video {
+    position: fixed;
+    top:0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+}
+
+video {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%)
 }
 
 

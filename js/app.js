@@ -473,3 +473,11 @@ $(document.body).on('click', '#mask', function(){
 	$('.layer').remove()
 })
 //showLayer(index)
+
+$('#slide-44 .btn-3').on('click', function(){
+	const video = `<div id="video"><video src="../images/video.mp4" controls="controls" autoplay="true"></video></div>`
+	$('body').append(video);
+})
+$('body').on('click', '#video', function(e){
+	$(this).remove()
+})
